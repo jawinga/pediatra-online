@@ -10,7 +10,7 @@
 
 <button type="submit" class="boton__inicioSesion">Iniciar sesión</button>
 
-<p>¿No tienes una cuenta? <a href="#" class="enlace">Regístrate aquí</a></p>
+<p>¿No tienes una cuenta? <a href="registro.php" class="enlace">Regístrate aquí</a></p>
 
 </form>
 
