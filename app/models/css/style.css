@@ -1,0 +1,24 @@
+/* Estilos personalizados */
+body {
+    font-family: sans-serif;
+}
+
+#calendar {
+    margin-top: 20px;
+}
+
+#registro {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-registro .form-label {
+    font-weight: bold;
+}
+
+#mensaje-registro {
+    margin-top: 10px;
+    font-weight: bold;
+}

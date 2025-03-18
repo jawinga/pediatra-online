@@ -11,8 +11,7 @@
     <?php if (isset($_SESSION["error"])): ?>
         <p style="color: red;"><?php echo $_SESSION["error"]; unset($_SESSION["error"]); ?></p>
     <?php endif; ?>
-
-    <form action="../app/controllers/LoginController.php" method="POST">
+    <form action="/pediatra-online/app/controllers/LoginController.php" method="POST">
         <label>Email:</label>
         <input type="email" name="email" required><br>
         

@@ -8,7 +8,8 @@
 <body>
     <h1>Registro</h1>
 
-    <form action="../app/controllers/RegisterController.php" method="POST">  <label>Nombre:</label>
+    <form action="../app/controllers/RegisterController.php" method="POST">
+        <label>Nombre:</label>
         <input type="text" name="nombre" required><br>
 
         <label>Email:</label>

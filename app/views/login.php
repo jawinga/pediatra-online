@@ -1,18 +1,27 @@
-<h1 class="titulo__inicioSesion">Inicia sesión con tu cuenta</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
 
-<form action="#" method="POST" class="titulo__inicioSesion">
+    <?php if (isset($_SESSION["error"])): ?>
+        <p style="color: red;"><?php echo $_SESSION["error"]; unset($_SESSION["error"]); ?></p>
+    <?php endif; ?>
 
-<label for="email" class="label__inicioSesion">Correo electrónico</label>
-<input type="email" id="email" name="email" class="input__inicioSesion" required>
+    <form action="../app/controllers/LoginController.php" method="POST">
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+        
+        <label>Contraseña:</label>
+        <input type="password" name="password" required><br>
 
-<label for="password" class ="label__inicioSesion">Contraseña</label>
-<input type="password" id="password" name="password" class="input__inicioSesion" required>
-
-<button type="submit" class="boton__inicioSesion">Iniciar sesión</button>
-
-<p>¿No tienes una cuenta? <a href="registro.php" class="enlace">Regístrate aquí</a></p>
-
-</form>
-
-
-
+        <button type="submit">Iniciar sesión</button>
+    </form>
+    
+    <p>¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a></p>
+</body>
+</html>

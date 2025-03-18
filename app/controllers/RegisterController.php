@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/../models/Usuario.php"; //  Importa el modelo Usuario
+require_once __DIR__ . "/../models/Usuario.php";
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 
-    if (Usuario::registrar($nombre, $email, $password)) { //  Usa la clase Usuario
+    if (Usuario::registrar($nombre, $email, $password)) {
         $_SESSION["mensaje"] = "Registro exitoso. Inicia sesión.";
         header("Location: ../../views/login.php");
     } else {

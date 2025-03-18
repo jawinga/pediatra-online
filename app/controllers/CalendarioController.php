@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/../models/Cita.php"; //  Importa el modelo Cita
+require_once __DIR__ . "/../models/Usuario.php"; // 👈 Importa el modelo
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['action'])) {
@@ -15,7 +15,7 @@ function obtenerCitas() {
     }
 
     $usuario_id = $_SESSION["usuario_id"];
-    $citas = Cita::obtenerPorUsuario($usuario_id); //  Usa la clase Cita
+    $citas = Cita::obtenerPorUsuario($usuario_id); // 👈 Aquí usa la clase Cita
 
     $eventos = [];
     foreach ($citas as $cita) {
