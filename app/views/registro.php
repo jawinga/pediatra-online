@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../public/css/registro.css">
+    <link rel="stylesheet" href="../../public/css/reseteo.css">
+
 </head>
 <body>
     <h1>Registro</h1>

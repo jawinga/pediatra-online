@@ -1,0 +1,98 @@
+/*Este archivo de reseteo ayuda a mantener un estilo 
+   uniforme en todos los navegadores. Si algún elemento necesita sus estilos 
+   predeterminados, habrá que sobrescribirlos manualmente. */
+
+/* Elimina márgenes, rellenos y establece el modelo de caja en border-box */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Elimina los estilos predeterminados de listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Restablece los estilos de los enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Restablece los estilos predeterminados de los botones */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* Define una tipografía y espaciado predeterminados */
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Restablece los estilos de los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Restablece los estilos de los elementos de formulario */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* Elimina el estilo predeterminado de los inputs */
+input,
+button,
+textarea,
+select {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Evita que las imágenes sobrepasen su contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Restablece el estilo de las tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* Evita la selección de texto en elementos interactivos */
+button,
+a {
+  user-select: none;
+}
+
+/* Define un cursor deshabilitado para elementos inactivos */
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

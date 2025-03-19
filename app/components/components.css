@@ -1,0 +1,28 @@
+/* Aqui podemos incluir components/elementos que se repiten en toda la página */
+
+/*BOTONES*/
+.cta {
+  font-family: "Fredoka", sans-serif;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease;
+}
+
+.cta:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+/*INPUTS FORMULARIOS*/
+.input {
+  padding: 1rem 1.2rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1.3rem;
+}
+
+.input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.3);
+}
