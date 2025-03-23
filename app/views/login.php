@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../../app/components/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -59,7 +60,8 @@
 
     </div>
 
-   
+    <script src="js/login.js"></script>
+
     
 </body>
 </html>

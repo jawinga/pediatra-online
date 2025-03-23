@@ -1,17 +1,44 @@
 /* Aqui podemos incluir components/elementos que se repiten en toda la página */
 
-/*BOTONES*/
 .cta {
   font-family: "Fredoka", sans-serif;
   padding: 0.9rem 1.8rem;
+  background: linear-gradient(135deg, #f72585, #b5179e);
+  color: white;
+  border: none;
   border-radius: 8px;
+  cursor: pointer;
   font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
   transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
     box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease;
 }
 
 .cta:hover {
   transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(247, 37, 133, 0.4);
+  background: linear-gradient(135deg, #ff4d94, #c41ab1);
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.4s ease;
+}
+
+.cta:hover::before {
+  left: 100%;
 }
 
 /*INPUTS FORMULARIOS*/
@@ -25,4 +52,33 @@
 .input:focus {
   border-color: #3498db;
   box-shadow: 0 0 4px rgba(52, 152, 219, 0.3);
+}
+
+.input {
+  padding: 1rem 1.2rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #2d3436;
+  font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ff6bb8;
+  box-shadow: 0 4px 12px rgba(255, 107, 184, 0.3),
+    0 0 0 4px rgba(255, 107, 184, 0.2);
+  background-color: #fffafc;
+  transform: translateY(-2px);
+}
+
+.input::placeholder {
+  color: #b2bec3;
+  font-weight: 400;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
