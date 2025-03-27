@@ -4,9 +4,137 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%; /* Usamos porcentaje para mejor adaptación */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* Reducido de 80px */
+  white-space: nowrap;
+  margin: 0 auto; /* Centra los links en el espacio disponible */
+  padding: 0 20px; /* Espacio interno para evitar pegado a los bordes */
+  /*text-wrap: nowrap;*/
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: auto;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.nav-links a:hover {
+  color: gray;
+}
+
+.auth-buttons .btn {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Reemplaza los márgenes individuales */
+  margin-right: 15px; /* Margen derecho adicional para el contenedor */
+}
+
+.login {
+  margin-right: 15px;
+  background-color: #50b4e6;
+  color: white;
+}
+
+.register {
+  margin-right: 30px;
+  background-color: #6a0dad;
+  color: white;
+}
+
+.login:hover,
+.register:hover {
+  opacity: 0.8;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.blog-grid {
+  margin-right: 6rem;
+  margin-left: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: min-content repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.blog-1 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+
+.blog-2 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.blog-3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.blog-4 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.blog-5 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/* .blog-1 {
+}
+.blog-2 .blog-3 .blog-4 .blog-5 */
+
 .blog-principal {
   height: 450px;
-  width: 750px;
+  width: fit-content;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr 2fr 1fr;
@@ -85,7 +213,7 @@ body {
 
 .blog-normal {
   height: 450px;
-  width: 375px;
+  width: 100%;
   background-color: #f0f2f5;
   border-radius: 8px;
   transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1),
@@ -146,4 +274,41 @@ body {
   font-size: 2rem;
   text-wrap: break-word;
   color: rgba(19, 64, 94);
+}
+
+.blog-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  width: 100%; /* 👈 Important */
+
+  gap: 2rem;
+  margin-top: 2rem;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.blog-h3 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #f72585, #b5179e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boton-mas {
+  background-color: transparent !important;
+  border: none !important;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: all 0.6s ease-in-out;
+}
+
+.boton-mas:hover {
+  text-decoration: none;
+  color: rgba(19, 64, 94);
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
 }
