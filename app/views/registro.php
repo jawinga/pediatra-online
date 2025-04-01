@@ -28,10 +28,14 @@
       <!-- Contenedor para alertas de error -->
       <div id="alerta-container"></div>
       
-      <form id="registro-form" class="formulario-contenedor" action="../app/controllers/RegisterController.php" method="POST">
+      <form id="registro-form" class="formulario-contenedor" action="../controllers/RegisterController.php" method="POST">
         <div class="input-group">
           <label for="nombre" class="label">Nombre:</label>
           <input type="text" name="nombre" id="nombre" class="input" required>
+        </div>
+        <div class="input-group">
+          <label for="apellidos" class="label">Apellidos:</label>
+          <input type="text" name="apellidos" id="apellidos" class="input" required>
         </div>
         <div class="input-group">
           <label for="email" class="label">Email:</label>
@@ -44,10 +48,6 @@
         <div class="input-group">
           <label for="confirm_password" class="label">Confirmar Contraseña:</label>
           <input type="password" name="confirm_password" id="confirm_password" class="input" required>
-        </div>
-        <div class="input-group checkbox-group">
-          <input type="checkbox" name="terminos_condiciones" id="terminos_condiciones" required>
-          <label for="terminos_condiciones" class="label-check">Acepto los términos y condiciones</label>
         </div>
         <button type="submit" class="cta">Registrarse</button>
       </form>

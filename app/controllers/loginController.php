@@ -7,14 +7,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     $usuario = Usuario::buscarPorCorreo($email);
 
-    if ($usuario && password_verify($password, $usuario['password'])) {
+    if ($usuario && password_verify($password, $usuario['password_hash'])) {
         $_SESSION["usuario_id"] = $usuario["id"];
         $_SESSION["nombre_usuario"] = $usuario["nombre"];
-        header("Location: ../../views/perfil.php");
+        header("Location: /../pediatra-online/app/views/TEST-usuarioCreado.html");
+        exit();
     } else {
         $_SESSION["error"] = "Correo o contraseña incorrectos.";
-        header("Location: ../../views/login.php");
+        header("Location: /../pediatra-online/app/views/login.php");
+        exit();
     }
 }
-?>
 
+?>
