@@ -10,13 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($usuario && password_verify($password, $usuario['password_hash'])) {
         $_SESSION["usuario_id"] = $usuario["id"];
         $_SESSION["nombre_usuario"] = $usuario["nombre"];
-        header("Location: /../pediatra-online/app/views/TEST-usuarioCreado.html");
+        $_SESSION["mensaje"] = "¡Ha iniciado sesión!"; // Mensaje de bienvenida
+        header("Location: ../views/inicio.php"); // Redirige a la página de inicio
         exit();
     } else {
         $_SESSION["error"] = "Correo o contraseña incorrectos.";
-        header("Location: /../pediatra-online/app/views/login.php");
+        header("Location: ../views/login.php"); // Redirige de vuelta al login si falla
         exit();
     }
 }
-
 ?>
+
