@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="styles.css">
     <style>
 
-
-
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -427,6 +425,22 @@
         </div>
         <div class="info-image">
             <img src="https://via.placeholder.com/400x300?text=Comunidad" alt="Protección colectiva">
+        </div>
+    </section>
+
+    <section class="embed-carousel">
+        <div class="div-carousel">
+            <iframe src="./carousel.html" width="50%" height="700px" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="info-content">
+            <h2>Seguridad comprobada</h2>
+            <p>Las vacunas pasan por rigurosas pruebas. Menos del 0.01% experimenta efectos secundarios graves. Los beneficios superan ampliamente los riesgos potenciales.</p>
+        </div>
+        <div class="info-image">
+            <img src="https://via.placeholder.com/400x300?text=Seguridad" alt="Seguridad de vacunas">
         </div>
     </section>
 
