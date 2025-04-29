@@ -51,7 +51,6 @@
 
         <p>¿No tienes una cuenta? <a href="registro.php">Regístrate aquí</a></p>
 
-
             </div>
 
          

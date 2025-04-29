@@ -39,7 +39,6 @@
 <div class="blog-navigation">
 
 	<h3 class="blog-h3">Blog</h3>
-	<button aria-label="Ver más blogs" class="boton-mas">Ver más</button>
 
 </div>
 
