@@ -5,7 +5,7 @@
     "titulo": "Secretos para que tu hijo tenga un buen autoestima",
     "subtitulo": "Claves para fortalecer su confianza desde casa",
     "texto": "La autoestima se construye cada día. Acompaña a tu hijo en sus retos y celebra sus logros, enseñándole que los errores son parte del crecimiento.",
-    "categoria": "Psicología Infantil"
+    "categoria": "psicologia"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "titulo": "Cómo fomentar la creatividad infantil",
     "subtitulo": "Actividades y consejos prácticos",
     "texto": "Ofrecer espacios de libertad y materiales variados estimula la imaginación. Anima a tu hijo a explorar y crear sin miedo al error.",
-    "categoria": "Educación Creativa"
+    "categoria": "educacion"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "titulo": "La importancia del juego en el desarrollo",
     "subtitulo": "Más allá de la diversión",
     "texto": "El juego impulsa habilidades sociales, emocionales y cognitivas. Respetar sus tiempos de juego fortalece su autonomía y bienestar.",
-    "categoria": "Desarrollo Infantil"
+    "categoria": "desarrollo"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "titulo": "Cómo enseñar disciplina positiva",
     "subtitulo": "Educar sin gritos ni castigos",
     "texto": "La disciplina positiva busca guiar con respeto y empatía. Establece límites claros y ofrece alternativas cuando surjan conflictos.",
-    "categoria": "Parentalidad"
+    "categoria": "parentalidad"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "titulo": "Hábitos de estudio en niños pequeños",
     "subtitulo": "Construyendo rutinas efectivas",
     "texto": "Pequeñas acciones diarias crean grandes hábitos. Un espacio adecuado y tiempos constantes ayudan a mejorar la concentración y responsabilidad.",
-    "categoria": "Educación"
+    "categoria": "educacion"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "titulo": "Cómo gestionar el uso de pantallas",
     "subtitulo": "Normas sanas en la era digital",
     "texto": "Establecer tiempos de uso, ofrecer alternativas de ocio y predicar con el ejemplo son estrategias clave para un uso consciente de la tecnología.",
-    "categoria": "Tecnología y Crianza"
+    "categoria": "tecnologia"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "titulo": "Alimentación saludable en la infancia",
     "subtitulo": "Consejos para una dieta equilibrada",
     "texto": "Introducir frutas, verduras y alimentos naturales desde temprana edad fomenta hábitos saludables que acompañarán a tu hijo toda la vida.",
-    "categoria": "Nutrición Infantil"
+    "categoria": "nutricion"
   },
   {
     "id": 8,
@@ -61,6 +61,6 @@
     "titulo": "Cómo apoyar la autonomía en niños",
     "subtitulo": "Pequeñas decisiones, grandes aprendizajes",
     "texto": "Permitir que los niños tomen decisiones adecuadas a su edad refuerza su autoestima y responsabilidad personal desde pequeños.",
-    "categoria": "Independencia y Autonomía"
+    "categoria": "autonomia"
   }
 ]

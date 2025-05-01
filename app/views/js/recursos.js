@@ -2,7 +2,10 @@ const blogGrid = document.querySelector("#blog-grid");
 
 function fillArticle({ titulo, categoria, imagenSRC }) {
   const div = document.createElement("div");
-  div.classList.add("blog-normal");
+  div.classList.add(
+    `blog-normal`,
+    categoria.replace(/\s+/g, "-").toLowerCase()
+  );
 
   div.innerHTML = `<div class="blog-superior">
   <img class="blog-normal__img" src="${imagenSRC}" alt="imagen de blog">
@@ -61,6 +64,8 @@ viewBox="0 0 512 512"  xml:space="preserve">
 
 </div> */
 
+let detallesData;
+
 fetch("../../articulos.json")
   .then((res) => {
     if (!res) {
@@ -90,6 +95,8 @@ fetch("../../articulos.json")
 
       blogGrid.appendChild(card);
     });
+
+    detallesData = data;
   })
 
   .catch((error) => {
@@ -117,11 +124,22 @@ filtrar1.addEventListener("click", (e) => {
   filtrar4.style.color = "";
 });
 filtrar2.addEventListener("click", (e) => {
-  filtrar2.style.color = "#7209b7";
-  filtrar1.style.color = "";
-  filtrar3.style.color = "";
-  filtrar4.style.color = "";
+  [filtrar1, filtrar2, filtrar3, filtrar4].forEach((btn) => {
+    btn.style.color = btn === filtrar2 ? "#7209b7" : "";
+  });
+
+  const artFiltr = detallesData.filter((articulo) => {
+    const artEducacion = articulo.categoria === "educacion";
+    console.log("Filtrando articulos... a educacion");
+    console.log(artEducacion);
+    return artEducacion;
+  });
+
+  artFiltr.forEach((art) => {
+    console.log(art);
+  });
 });
+
 filtrar3.addEventListener("click", (e) => {
   filtrar3.style.color = "#7209b7";
   filtrar1.style.color = "";
