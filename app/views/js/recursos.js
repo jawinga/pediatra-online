@@ -1,4 +1,6 @@
 const blogGrid = document.querySelector("#blog-grid");
+const blogPrincipal = blogGrid.querySelector(".blog-principal");
+const blogNavigation = blogGrid.querySelector(".blog-navigation");
 
 function fillArticle({ titulo, categoria, imagenSRC }) {
   const div = document.createElement("div");
@@ -103,13 +105,6 @@ fetch("../../articulos.json")
     console.error("❌ Ha habido un error al cargar los artículos:", error);
   });
 
-//filtrar
-
-// <div class="recrusos-filtrar-1" id="recrusos-filtrar-1">Todos</div>
-// <div class="recrusos-filtrar-2" id="recrusos-filtrar-2">Educación</div>
-// <div class="recrusos-filtrar-educacion" id="recrusos-filtrar-3">Psicología</div>
-// <div class="recrusos-filtrar-educacion" id="recrusos-filtrar-4">Nutrición</div>
-
 const filtrar1 = document.querySelector("#recursos-filtrar-1");
 const filtrar2 = document.querySelector("#recursos-filtrar-2");
 const filtrar3 = document.querySelector("#recursos-filtrar-3");
@@ -122,33 +117,111 @@ filtrar1.addEventListener("click", (e) => {
   filtrar2.style.color = "";
   filtrar3.style.color = "";
   filtrar4.style.color = "";
+
+  fetch("../../articulos.json")
+    .then((res) => {
+      if (!res) {
+        throw new Error("Ha habido un error a la hora de conectar con el JSON");
+      }
+      return res.json();
+    })
+    .then((data) => {
+      console.log("Los articulos se han cargado:");
+
+      data.forEach((articulo) => {
+        console.log("---------------------");
+        console.log(articulo.id);
+        console.log(articulo.titulo);
+        console.log(articulo.imgUrl);
+        console.log(articulo.subtitulo);
+        console.log(articulo.categoria);
+        console.log(articulo.texto);
+
+        const card = fillArticle({
+          titulo: articulo.titulo,
+          subtitulo: articulo.subtitulo,
+          texto: articulo.texto,
+          imgUrl: articulo.imgUrl,
+          categoria: articulo.categoria,
+        });
+
+        blogGrid.appendChild(card);
+      });
+
+      detallesData = data;
+    })
+
+    .catch((error) => {
+      console.error("❌ Ha habido un error al cargar los artículos:", error);
+    });
 });
-filtrar2.addEventListener("click", (e) => {
-  [filtrar1, filtrar2, filtrar3, filtrar4].forEach((btn) => {
-    btn.style.color = btn === filtrar2 ? "#7209b7" : "";
+
+function filtrarArticulos(
+  filt,
+  filt1 = filtrar1,
+  filt2 = filtrar2,
+  filt3 = filtrar3,
+  filt4 = filtrar4,
+  categoria
+) {
+  [filt1, filt2, filt3, filt4].forEach((btn) => {
+    btn.style.color = btn === filt ? "#7209b7" : "";
   });
 
   const artFiltr = detallesData.filter((articulo) => {
-    const artEducacion = articulo.categoria === "educacion";
-    console.log("Filtrando articulos... a educacion");
-    console.log(artEducacion);
-    return artEducacion;
+    const art = articulo.categoria === `${categoria}`;
+    console.log(`Filtrando articulos... a ${categoria}`);
+    console.log(art);
+    return art;
+  });
+
+  const blogNormal = blogGrid.querySelectorAll(".blog-normal");
+
+  blogNormal.forEach((blog) => {
+    blog.remove();
   });
 
   artFiltr.forEach((art) => {
     console.log(art);
+    const card = fillArticle({
+      titulo: art.titulo,
+      subtitulo: art.subtitulo,
+      texto: art.texto,
+      imgUrl: art.imgUrl,
+      categoria: art.categoria,
+    });
+    blogGrid.appendChild(card);
   });
+}
+
+filtrar2.addEventListener("click", (e) => {
+  filtrarArticulos(
+    filtrar2,
+    filtrar1,
+    filtrar2,
+    filtrar3,
+    filtrar4,
+    "educacion"
+  );
 });
 
 filtrar3.addEventListener("click", (e) => {
-  filtrar3.style.color = "#7209b7";
-  filtrar1.style.color = "";
-  filtrar2.style.color = "";
-  filtrar4.style.color = "";
+  filtrarArticulos(
+    filtrar3,
+    filtrar1,
+    filtrar2,
+    filtrar3,
+    filtrar4,
+    "nutricion"
+  );
 });
 filtrar4.addEventListener("click", (e) => {
-  filtrar4.style.color = "#7209b7";
-  filtrar1.style.color = "";
-  filtrar2.style.color = "";
-  filtrar3.style.color = "";
+  filtrarArticulos(
+    filtrar4,
+    filtrar1,
+    filtrar2,
+    filtrar3,
+    filtrar4,
+    "nutricion"
+  );
 });
