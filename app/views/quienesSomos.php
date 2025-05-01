@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <title>PediVax</title>
+    <title>Quiénes somos</title>
     <link rel="stylesheet" href="./css/pageStyle.css">
 
 </head>
@@ -32,22 +32,18 @@
             <div class="menu-toggle">&#9776;</div> <!-- Icono tipo hamburguesa -->
         </nav>
     </header>
-    
+
     <section class="hero">
-        <div class="hero-content">
-            <h1>Texto para captar la atención de los usuarios</h1>
-            <p>Texto explicativo <strong>más largo</strong> para desarrollar la frase de arriba con más detalle y aprovechando la <strong>negrita</strong>.</p>
-            <button class="btn cta"><strong>¡Únete ahora!</strong></button>
-        </div>
-        <div class="hero-image">
-            <img src="mother-child.png" alt="Madre con su hijo">
-        </div>
+        <h1>¿Quiénes somos?</h1>
+        <p>Conoce el equipo detrás de PediVax.</p>
     </section>
     
     <section class="info">
         <div class="info-content">
-            <h2>Importancia de la vacunación infantil</h2>
-            <p>Las vacunas previenen enfermedades peligrosas. Según la OMS, evitan 2-3 millones de muertes anuales. La inmunización completa protege a los niños y a toda la comunidad.</p>
+            <h2>Nuestro equipo</h2>
+            <p>Somos un grupo de compañeros expertos en el sector de desarrollo web respaldados por los mejores profesionales del sector de la salud, especializados tanto en vacunas
+                como en pediatría
+            </p>
         </div>
         <div class="info-image">
             <img src="https://via.placeholder.com/400x300?text=Niño+vacunado" alt="Vacunación infantil">
@@ -56,8 +52,10 @@
 
     <section class="info">
         <div class="info-content">
-            <h2>Calendario de vacunación</h2>
-            <p>Nuestro calendario sigue las recomendaciones de la Asociación Española de Pediatría. Incluye todas las vacunas desde el nacimiento hasta la adolescencia con recordatorios automáticos.</p>
+            <h2>Nuestra misión</h2>
+            <p>El cuidado de los más pequeños de la casa es algo complicado, por ello nos hemos querido comprometer a facilitar a los padres el seguimiento de las vacunas y citas
+                médicas para sus hijos.
+            </p>
         </div>
         <div class="info-image">
             <img src="https://via.placeholder.com/400x300?text=Calendario" alt="Calendario de vacunación">
@@ -101,5 +99,6 @@
     </section>
 
     <script src="./js/pages.js"></script>
+
 </body>
 </html>
