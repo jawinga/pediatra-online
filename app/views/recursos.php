@@ -34,11 +34,19 @@
     </header>
 
 
-<div class="blog-grid">
+<div class="blog-grid" id="blog-grid">
 
 <div class="blog-navigation">
 
 	<h3 class="blog-h3">Blog</h3>
+	<div class="recursos-filtrar">
+
+		<div class="recrusos-filtrar-1" id="recursos-filtrar-1">Todos</div>
+		<div class="recrusos-filtrar-2" id="recursos-filtrar-2">Educación</div>
+		<div class="recrusos-filtrar-educacion" id="recursos-filtrar-3">Psicología</div>
+		<div class="recrusos-filtrar-educacion" id="recursos-filtrar-4">Nutrición</div>
+
+	</div>
 
 </div>
 
@@ -123,7 +131,10 @@
             <span class="blog-categoria__nombre">Psicología</span>
         </div>
         <h2 class="blog-titulo">Secretos para que tu hijo tenga un buen autoestima</h2>
-        <p class="blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus reiciendis esse dolor non quae expedita commodi! Blanditiis corrupti consectetur, id facilis est laboriosam quae! Doloremque voluptatem illo quia sint.</p>
+<p class="blog-desc">
+    La autoestima de un niño se construye día a día a través de palabras, gestos y actitudes. Reforzar su confianza implica valorar sus esfuerzos, enseñarle a superar desafíos y apoyarlo en sus fracasos sin juzgarlo. Un entorno familiar positivo y la comunicación afectiva son claves para que desarrolle una imagen sana de sí mismo.
+</p>
+
         <button class="blog-boton">Leer más</button>
     </div> 
 </div>
@@ -345,6 +356,6 @@
 
 
 
-
+<script src="../views/js/recursos.js"></script>
 </body>
 </html>

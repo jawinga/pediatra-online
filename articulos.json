@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Secretos para que tu hijo tenga un buen autoestima",
+    "subtitulo": "Claves para fortalecer su confianza desde casa",
+    "texto": "La autoestima se construye cada día. Acompaña a tu hijo en sus retos y celebra sus logros, enseñándole que los errores son parte del crecimiento.",
+    "categoria": "Psicología Infantil"
+  },
+  {
+    "id": 2,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Cómo fomentar la creatividad infantil",
+    "subtitulo": "Actividades y consejos prácticos",
+    "texto": "Ofrecer espacios de libertad y materiales variados estimula la imaginación. Anima a tu hijo a explorar y crear sin miedo al error.",
+    "categoria": "Educación Creativa"
+  },
+  {
+    "id": 3,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "La importancia del juego en el desarrollo",
+    "subtitulo": "Más allá de la diversión",
+    "texto": "El juego impulsa habilidades sociales, emocionales y cognitivas. Respetar sus tiempos de juego fortalece su autonomía y bienestar.",
+    "categoria": "Desarrollo Infantil"
+  },
+  {
+    "id": 4,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Cómo enseñar disciplina positiva",
+    "subtitulo": "Educar sin gritos ni castigos",
+    "texto": "La disciplina positiva busca guiar con respeto y empatía. Establece límites claros y ofrece alternativas cuando surjan conflictos.",
+    "categoria": "Parentalidad"
+  },
+  {
+    "id": 5,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Hábitos de estudio en niños pequeños",
+    "subtitulo": "Construyendo rutinas efectivas",
+    "texto": "Pequeñas acciones diarias crean grandes hábitos. Un espacio adecuado y tiempos constantes ayudan a mejorar la concentración y responsabilidad.",
+    "categoria": "Educación"
+  },
+  {
+    "id": 6,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Cómo gestionar el uso de pantallas",
+    "subtitulo": "Normas sanas en la era digital",
+    "texto": "Establecer tiempos de uso, ofrecer alternativas de ocio y predicar con el ejemplo son estrategias clave para un uso consciente de la tecnología.",
+    "categoria": "Tecnología y Crianza"
+  },
+  {
+    "id": 7,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Alimentación saludable en la infancia",
+    "subtitulo": "Consejos para una dieta equilibrada",
+    "texto": "Introducir frutas, verduras y alimentos naturales desde temprana edad fomenta hábitos saludables que acompañarán a tu hijo toda la vida.",
+    "categoria": "Nutrición Infantil"
+  },
+  {
+    "id": 8,
+    "imgUrl": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "titulo": "Cómo apoyar la autonomía en niños",
+    "subtitulo": "Pequeñas decisiones, grandes aprendizajes",
+    "texto": "Permitir que los niños tomen decisiones adecuadas a su edad refuerza su autoestima y responsabilidad personal desde pequeños.",
+    "categoria": "Independencia y Autonomía"
+  }
+]
