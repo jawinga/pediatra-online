@@ -2,14 +2,16 @@ const blogGrid = document.querySelector("#blog-grid");
 const blogPrincipal = blogGrid.querySelector(".blog-principal");
 const blogNavigation = blogGrid.querySelector(".blog-navigation");
 
-function fillArticle({ titulo, categoria, imagenSRC }) {
+function fillArticle({ id, titulo, categoria, imagenSRC }) {
   const div = document.createElement("div");
   div.classList.add(
     `blog-normal`,
     categoria.replace(/\s+/g, "-").toLowerCase()
   );
 
-  div.innerHTML = `<div class="blog-superior">
+  div.innerHTML = `<a href ="detalle.html?id=${id}">
+  
+  <div class="blog-superior">
   <img class="blog-normal__img" src="${imagenSRC}" alt="imagen de blog">
 </div>
 <div class="blog-inferior">
@@ -56,7 +58,8 @@ viewBox="0 0 512 512"  xml:space="preserve">
 
   </h2>
 
-</div>`;
+</div>
+  </a>`;
   return div;
 }
 
