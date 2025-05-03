@@ -2,17 +2,17 @@ const blogGrid = document.querySelector("#blog-grid");
 const blogPrincipal = blogGrid.querySelector(".blog-principal");
 const blogNavigation = blogGrid.querySelector(".blog-navigation");
 
-function fillArticle({ id, titulo, categoria, imagenSRC }) {
+function fillArticle({ id, titulo, categoria, imgURL }) {
   const div = document.createElement("div");
   div.classList.add(
     `blog-normal`,
     categoria.replace(/\s+/g, "-").toLowerCase()
   );
 
-  div.innerHTML = `<a href ="detalle.html?id=${id}">
+  div.innerHTML = `<a href ="detalleArticulo.php?id=${id}">
   
   <div class="blog-superior">
-  <img class="blog-normal__img" src="${imagenSRC}" alt="imagen de blog">
+  <img class="blog-normal__img" src="${imgURL}" alt="imagen de blog">
 </div>
 <div class="blog-inferior">
 
@@ -85,16 +85,17 @@ fetch("../../articulos.json")
       console.log("---------------------");
       console.log(articulo.id);
       console.log(articulo.titulo);
-      console.log(articulo.imgUrl);
+      console.log(articulo.imgURL);
       console.log(articulo.subtitulo);
       console.log(articulo.categoria);
       console.log(articulo.texto);
 
       const card = fillArticle({
+        id: articulo.id,
         titulo: articulo.titulo,
         subtitulo: articulo.subtitulo,
         texto: articulo.texto,
-        imgUrl: articulo.imgUrl,
+        imgURL: articulo.imgURL,
         categoria: articulo.categoria,
       });
 
@@ -135,7 +136,7 @@ filtrar1.addEventListener("click", (e) => {
         console.log("---------------------");
         console.log(articulo.id);
         console.log(articulo.titulo);
-        console.log(articulo.imgUrl);
+        console.log(articulo.imgURL);
         console.log(articulo.subtitulo);
         console.log(articulo.categoria);
         console.log(articulo.texto);
@@ -144,7 +145,7 @@ filtrar1.addEventListener("click", (e) => {
           titulo: articulo.titulo,
           subtitulo: articulo.subtitulo,
           texto: articulo.texto,
-          imgUrl: articulo.imgUrl,
+          imgURL: articulo.imgURL,
           categoria: articulo.categoria,
         });
 
@@ -190,7 +191,7 @@ function filtrarArticulos(
       titulo: art.titulo,
       subtitulo: art.subtitulo,
       texto: art.texto,
-      imgUrl: art.imgUrl,
+      imgURL: art.imgURL,
       categoria: art.categoria,
     });
     blogGrid.appendChild(card);

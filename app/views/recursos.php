@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +53,7 @@
 
 <div class="blog-principal blog-1">
     <div class="blog-izq">
-    <img class="blog-img" src="img/blog-img/blog1.jpg" alt="Imagen de blog"> 
+    <img class="blog-img" src="https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Imagen de blog"> 
 	</div>  
 	<div class="blog-der">
         <div class="blog-categoria">
