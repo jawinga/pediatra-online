@@ -19,10 +19,10 @@
         <nav class="navbar" id="navbar">
             <div class="logo"><img src="linkAlLogo" alt="PediVax"></div>
             <ul class="nav-links">
-                <li><a href="#">Calendario</a></li>
-                <li><a href="#">Quiénes somos</a></li>
-                <li><a href="#">Recursos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./calendario/calendario.php">Calendario</a></li>
+                <li><a href="./quienesSomos.php">Quiénes somos</a></li>
+                <li><a href="./recursos.php">Recursos</a></li>
+                <li><a href="./contacto.php">Contacto</a></li>
             </ul>
             
             <div class="auth-buttons">
