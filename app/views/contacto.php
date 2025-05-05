@@ -26,8 +26,8 @@
             </ul>
             
             <div class="auth-buttons">
-                <button class="btn login"><strong>Iniciar Sesión</strong></button>
-                <button class="btn register"><strong>Crear Cuenta</strong></button>
+                <button class="btn login btn-primary"><strong>Iniciar Sesión</strong></button>
+                <button class="btn register btn-secondary"><strong>Crear Cuenta</strong></button>
             </div>
             <div class="menu-toggle">&#9776;</div> <!-- Icono tipo hamburguesa -->
         </nav>
@@ -47,7 +47,7 @@
         <input type="password" name="password" id="password" required><br><br>
         <label for="mensaje" name="mensaje" id="mensaje">Mensaje:</label><textarea></textarea>
         
-        <input type="submit" class="btn enviar" value="Enviar">
+        <input type="submit" class="btn btn-success" value="Enviar">
     </form>
 
     <script>

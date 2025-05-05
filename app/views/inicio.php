@@ -40,7 +40,7 @@
             <button class="btn cta"><strong>¡Únete ahora!</strong></button>
         </div>
         <div class="hero-image">
-            <img src="mother-child.png" alt="Madre con su hijo">
+            <img src="./img/inicio-img/header inicio.png" alt="Madre con su hijo">
         </div>
     </section>
     
@@ -50,7 +50,7 @@
             <p>Las vacunas previenen enfermedades peligrosas. Según la OMS, evitan 2-3 millones de muertes anuales. La inmunización completa protege a los niños y a toda la comunidad.</p>
         </div>
         <div class="info-image">
-            <img src="https://via.placeholder.com/400x300?text=Niño+vacunado" alt="Vacunación infantil">
+            <img src="./img/inicio-img/vacunacion.png" alt="Vacunación infantil">
         </div>
     </section>
 
@@ -60,7 +60,7 @@
             <p>Nuestro calendario sigue las recomendaciones de la Asociación Española de Pediatría. Incluye todas las vacunas desde el nacimiento hasta la adolescencia con recordatorios automáticos.</p>
         </div>
         <div class="info-image">
-            <img src="https://via.placeholder.com/400x300?text=Calendario" alt="Calendario de vacunación">
+            <img src="./img/inicio-img/calendario vacunacion.png" alt="Calendario de vacunación">
         </div>
     </section>
 
@@ -70,7 +70,7 @@
             <p>Las vacunas pasan por rigurosas pruebas. Menos del 0.01% experimenta efectos secundarios graves. Los beneficios superan ampliamente los riesgos potenciales.</p>
         </div>
         <div class="info-image">
-            <img src="https://via.placeholder.com/400x300?text=Seguridad" alt="Seguridad de vacunas">
+            <img src="./img/inicio-img/seguridad vacunacion.png" alt="Seguridad de vacunas">
         </div>
     </section>
 
