@@ -13,7 +13,7 @@ fetch("../../articulos.json")
 
     document.getElementById("titulo").textContent = articulo.titulo;
     document.getElementById("categoria").textContent = articulo.categoria;
-    document.getElementById("imagen").src = articulo.imgUrl;
+    document.getElementById("imagen").src = articulo.imgURL;
     document.getElementById("imagen").alt = "Imagen de " + articulo.titulo;
     document.getElementById("subtitulo").textContent = articulo.subtitulo;
     document.getElementById("texto").textContent = articulo.texto;

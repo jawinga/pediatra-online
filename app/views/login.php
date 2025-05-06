@@ -39,7 +39,7 @@
     <p style="color: red;"><?php echo $_SESSION["error"]; unset($_SESSION["error"]); ?></p>
         <?php endif; ?>
 
-        <form method="POST" class="formulario-contenedor" action="/pediatra-online/app/controllers/LoginController.php">
+        <form method="POST" class="formulario-contenedor" action="../views/inicio.php">
         <label class="label">Email:</label>
         <input type="email" name="email" required class="input" ><br>
     
