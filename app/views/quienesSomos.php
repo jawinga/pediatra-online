@@ -10,28 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!--Bootstraps icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     <title>Quiénes somos</title>
     <link rel="stylesheet" href="./css/pageStyle.css">
 
 </head>
 <body>
-    <header>
-        <nav class="navbar" id="navbar">
-            <div class="logo"><img src="linkAlLogo" alt="PediVax"></div>
-            <ul class="nav-links">
-                <li><a href="#">Calendario</a></li>
-                <li><a href="./quienesSomos.php">Quiénes somos</a></li>
-                <li><a href="#">Recursos</a></li>
-                <li><a href="./contacto.php">Contacto</a></li>
-            </ul>
-            
-            <div class="auth-buttons">
-                <button class="btn login"><strong>Iniciar Sesión</strong></button>
-                <button class="btn register"><strong>Crear Cuenta</strong></button>
-            </div>
-            <div class="menu-toggle">&#9776;</div> <!-- Icono tipo hamburguesa -->
-        </nav>
-    </header>
+    
+    <header><?php include('../components/navbar.php'); ?></header>
 
     <section class="hero">
         <h1>¿Quiénes somos?</h1>
@@ -99,6 +87,8 @@
     </section>
 
     <script src="./js/pages.js"></script>
+
+    <?php include('../components/footer.php'); ?>
 
 </body>
 </html>

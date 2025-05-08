@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%; /* Usamos porcentaje para mejor adaptación */
+    padding: 1rem 5%; /* Usamos porcentaje para mejor adaptación */
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -27,7 +27,19 @@ body {
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
   }
+
+  .logo:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .logo img {
+    max-width: 7.5rem;
+    height: auto;
+  }
+
   
   .scrolled {
     background-color: rgba(255, 255, 255, 0.9);
@@ -37,11 +49,11 @@ body {
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px; /* Reducido de 80px */
+    gap: 1.87rem;
     white-space: nowrap;
     margin: 0 auto; /* Centra los links en el espacio disponible */
-    padding: 0 20px; /* Espacio interno para evitar pegado a los bordes */
-    /*text-wrap: nowrap;*/
+    padding: 0 1.25rem; /* Espacio interno para evitar pegado a los bordes */
+    text-wrap: nowrap;
   }
   
   .nav-links li a {
@@ -49,7 +61,7 @@ body {
     color: #333;
     font-weight: bold;
     padding: auto;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     transition: background-color 0.3s;
   }
   .nav-links a:hover {
@@ -58,17 +70,17 @@ body {
   
   .auth-buttons .btn {
     font-family: "Montserrat", sans-serif;
-    padding: 10px 12px;
+    padding: 0.62rem 0.75rem;
     border: none;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 6px;
     transition: background-color 0.3s;
     text-wrap: nowrap;
     display: flex;
     align-items: center;
-    gap: 12px; /* Reemplaza los márgenes individuales */
-    margin-right: 15px; /* Margen derecho adicional para el contenedor */
+    gap: 0.75rem; /* Reemplaza los márgenes individuales */
+    margin-right: 1rem; /* Margen derecho adicional para el contenedor */
   }
   
   .login {
@@ -201,10 +213,6 @@ body {
   
     .navbar {
       padding: 15px 10px;
-    }
-  
-    .logo {
-      max-width: 100px;
     }
   
     .auth-buttons {
@@ -452,6 +460,63 @@ body {
     margin-top: 1rem;
     padding: 20px;
   }
+
+/*Footer*/
+footer {
+  background: linear-gradient(to right, #2a52be, #6a0dad);
+  color: white;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .container {
+  background: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(to right, #2a52be, #6a0dad);
+}
+
+footer h5, footer h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #4CC9F0;
+  text-decoration: underline;
+}
+
+footer hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+footer small {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+footer .bi {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .bi:hover {
+  color: #4CC9F0;
+  transform: scale(1.1);
+}
+
+.fw-semibold {
+  color: #F72585;
+}
+
 
 /*Centrar el carrusel*/
 .embed-carousel {
