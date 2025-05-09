@@ -3,39 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Preguntas Frecuentes - Calendario Pediátrico</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <!-- Aquí puedes agregar más archivos de estilo si lo necesitas -->
+  <title>Calendario de Vacunación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/calendario.css">
 </head>
-<body class="bg-light">
-  <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<body>
+
+<header>  
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
+      <div class="logo"><img src="./img/logoPedivax" alt="PediVax"></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+        &#9776;
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="vacunas/vacunas.php?edad=2">Vacunas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="vacuna/porquepvacunar.php">¿Por qué vacunar?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="vacuna/preguntas.php">Preguntas Frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="inicio.php">Inicio</a>
-          </li>
+        <ul class="nav-links navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="./calendario.php">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/vacunas.php">Vacunas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/porquevacunar.php">Por qué vacunar</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/preguntas.php">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../inicio.php">Inicio</a></li>
         </ul>
       </div>
     </div>
   </nav>
+</header>
 
-  <!-- Sección de Preguntas Frecuentes -->
-  <section class="faq py-5">
+<section class="hero text-center py-5 bg-light">
+  <h1>Vacunas</h1>
+
+</section>
+
     <div class="container">
       <h2 class="text-center mb-4 text-primary">¡Resolvemos tus Dudas sobre Vacunas!</h2>
 
@@ -105,8 +106,17 @@
     <p>&copy; 2025 Calendario Pediátrico. Todos los derechos reservados.</p>
   </footer>
 
-  <!-- Scripts de Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+ 
+  <script>
+        //Genera el menú de hamburguesa y lo esconde si el dispositivo es demasiado grande.
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <script src="../../js/pages.js"></script>
+
+    <?php include('../../../components/footer.php'); ?>
+
 </body>
 </html>

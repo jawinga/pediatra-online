@@ -150,42 +150,46 @@ $vacunas = [
   ]
 ];
 ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Vacunas a los <?= $edad ?> meses</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Vacunación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/calendario.css">
 </head>
+<body>
 
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<header>  
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
+      <div class="logo"><img src="./img/logoPedivax" alt="PediVax"></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+        &#9776;
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <!-- Enlace directo a Vacunas -->
-       
-          <li class="nav-item">
-            <a class="nav-link" href="porquevacunar.php">¿Por qué vacunar?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="preguntas.php">Preguntas frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="views/inicio.php">Inicio</a>
-          </li>
+        <ul class="nav-links navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="./calendario.php">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/vacunas.php">Vacunas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/porquevacunar.php">Por qué vacunar</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/preguntas.php">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../inicio.php">Inicio</a></li>
         </ul>
       </div>
     </div>
   </nav>
-</body>
+</header>
 
+<section class="hero text-center py-5 bg-light">
+  <h1>Vacunas</h1>
 
+</section>
 
 
 
@@ -253,19 +257,30 @@ $vacunas = [
   <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto"> <!-- Alinea los enlaces a la derecha -->
         <li class="nav-item">
-          <a class="nav-link" href="porquepvacunar.php">¿Por qué vacunar?</a>
+          <a class="nav-link" href="../vacunas/porquevacunar.php">¿Por qué vacunar?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="preguntas.php">Preguntas frecuentes</a>
+          <a class="nav-link" href="../vacunas/vacunas.php">Preguntas frecuentes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="calendario.php">Calendario</a>
+          <a class="nav-link" href="../../calendario/calendario.php">Calendario</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="inicio.php">Inicio</a>
+          <a class="nav-link" href="../../inicio.php">Inicio</a>
         </li>
       </ul>
     </div>
 </div>
+
+    <script>
+        //Genera el menú de hamburguesa y lo esconde si el dispositivo es demasiado grande.
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <script src="../../js/pages.js"></script>
+
+    <?php include('../../../components/footer.php'); ?>
 </body>
 </html>

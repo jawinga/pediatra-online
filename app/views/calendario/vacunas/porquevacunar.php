@@ -3,38 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿Por qué Vacunar?</title>
-  <!-- Agregar Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Agregar AOS (Animaciones en Scroll) -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <title>Calendario de Vacunación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/calendario.css">
 </head>
-<body class="bg-light">
+<body>
 
-  <!-- Barra de Navegación -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+<header>  
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
+      <div class="logo"><img src="./img/logoPedivax" alt="PediVax"></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
+        &#9776;
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="vacunas/index.php?edad=2">Vacunas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="porquepvacunar.php">¿Por qué vacunar?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="preguntas.php">Preguntas frecuentes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="inicio.php">Inicio</a>
-          </li>
+        <ul class="nav-links navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="./calendario.php">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/vacunas.php">Vacunas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/porquevacunar.php">Por qué vacunar</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/preguntas.php">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../inicio.php">Inicio</a></li>
         </ul>
       </div>
     </div>
   </nav>
+</header>
+
+<section class="hero text-center py-5 bg-light">
+  <h1>Vacunas</h1>
+
+</section>
 
   <!-- Sección Explicativa sobre la Importancia de las Vacunas -->
   <section class="why-vaccinate py-5" data-aos="fade-up">
@@ -110,8 +111,18 @@
   <!-- Agregar Bootstrap JS y AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+ 
+ <script>
+        //Genera el menú de hamburguesa y lo esconde si el dispositivo es demasiado grande.
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <script src="../../js/pages.js"></script>
+
+    <?php include('../../../components/footer.php'); ?>
+
+ 
 </body>
 </html>
