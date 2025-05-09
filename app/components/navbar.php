@@ -1,3 +1,7 @@
+<?php
+session_start();
+$isLoggedIn = isset($_SESSION['usuario_id']);
+?>
 <nav class="navbar" id="navbar">
     <div class="logo">
         <a href="./inicio.php">
@@ -10,10 +14,18 @@
         <li><a href="#">Recursos</a></li>
         <li><a href="./contacto.php">Contacto</a></li>
     </ul>
-            
-    <div class="auth-buttons">
-        <button class="btn login btn-primary"><strong>Iniciar Sesión</strong></button>
-        <button class="btn register btn-secondary"><strong>Crear Cuenta</strong></button>
-    </div>
+
+    <?php if ($isLoggedIn): ?>
+        <div class="auth-buttons">
+            <a href="./perfil.php" class="btn register btn-secondary"><strong>Ir al perfil</strong></a>
+            <a href="./logout.php" class="btn login btn-primary"><strong>Cerrar Sesión</strong></a>
+        </div>
+    <?php else: ?>        
+        <div class="auth-buttons">
+            <a href="./login.php" class="btn login btn-primary"><strong>Iniciar Sesión</strong></a>
+            <a href="./registro.php" class="btn register btn-secondary"><strong>Crear Cuenta</strong></a>
+        </div>
+    <?php endif; ?>
+
     <div class="menu-toggle">&#9776;</div> <!-- Icono tipo hamburguesa -->
 </nav>

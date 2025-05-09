@@ -1,8 +1,18 @@
-body {
+  html,body {
+    height: 100%;
+  }
+  
+  body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
   }
   
   /*Comienza el contenido de la navbar*/
@@ -341,7 +351,7 @@ body {
     border-radius: 20px;
   }
   
-  /*Específico del formulario*/
+  /*Específico de la página Contacto*/
   
   form,
   .card,
@@ -461,6 +471,51 @@ body {
     padding: 20px;
   }
 
+/*Específico de la página de Quiénes somos*/
+
+#testimonialCarousel .carousel-inner {
+  background: linear-gradient(to right, #2a52be, #6a0dad);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+#testimonialCarousel p {
+  color: #ffff;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+#testimonialCarousel h5 {
+  color: #4CC9F0;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 1rem;
+  filter: drop-shadow(0 0 5px #a7ffeb);
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+.slider-stars {
+  color: #F72585;
+}
+
+.d-flex {
+  padding-bottom: 3rem;
+}
+
+#testimonialCarousel {
+  max-width: 50%;
+}
+
+
 /*Footer*/
 footer {
   background: linear-gradient(to right, #2a52be, #6a0dad);
@@ -518,7 +573,7 @@ footer .bi:hover {
 }
 
 
-/*Centrar el carrusel*/
+/*Centrar el carrusel de vídeos*/
 .embed-carousel {
     display: flex;
     justify-content: center;

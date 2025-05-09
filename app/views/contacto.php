@@ -18,30 +18,79 @@
 
 </head>
 <body>
-
     <header><?php include('../components/navbar.php'); ?></header>
+
+    <main>
+        <section class="hero">
+            <h1>¡Contacta con nosotros!</h1>
+            <p>Haznos saber tus dudas rellenando este formulario.</p>
+        </section>
+
+        <form method="post" action="addEvent2.php">
+            <label for="nombre_contactForm">Nombre:</label>
+            <input type="text" name="nombre_contactForm" id="nombre_contactForm" required><br><br>
+            <label for="asunto_contactForm">Asunto:</label>
+            <input type="text" name="asunto_contactForm" id="asunto_contactForm" required><br><br>
+            <label for="mensaje_contactForm" name="mensaje_contactForm" id="mensaje_contactForm">Mensaje:</label><textarea></textarea>
+            
+            <input type="submit" class="btn btn-success" value="Enviar">
+        </form>
+    </main>
     
-    <section class="hero">
-        <h1>¡Contacta con nosotros!</h1>
-        <p>Haznos saber tus dudas rellenando este formulario.</p>
-    </section>
+    <div class="d-flex justify-content-center">
+        <div id="testimonialCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="p-4 text-center">
+                        <p class="fs-5 fst-italic">“Una experiencia maravillosa para los padres primerizos. ¡Muy recomendable!”</p>
+                        <h5 class="mt-3">– María G.</h5>
+                        <div class="mb-2 slider-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>     
+                    </div>
+                </div>
 
-    <form method="post" action="addEvent2.php">
-        <label for="nombre_contactForm">Nombre:</label>
-        <input type="text" name="nombre_contactForm" id="nombre_contactForm" required><br><br>
-        <label for="asunto_contactForm">Asunto:</label>
-        <input type="text" name="asunto_contactForm" id="asunto_contactForm" required><br><br>
-        <label for="mensaje_contactForm" name="mensaje_contactForm" id="mensaje_contactForm">Mensaje:</label><textarea></textarea>
-        
-        <input type="submit" class="btn btn-success" value="Enviar">
-    </form>
+                <div class="carousel-item">
+                    <div class="p-4 text-center">
+                        <p class="fs-5 fst-italic">“Gracias a PediVax, no se me olvida ni una sola vacuna. ¡Genial!”</p>
+                        <h5 class="mt-3">– Javier L.</h5>
+                        <div class="mb-2 slider-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                </div>
 
-    <script>
-        //Genera el menú de hamburguesa y lo esconde si el dispositivo es demasiado grande.
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+                <div class="carousel-item">
+                    <div class="p-4 text-center">
+                        <p class="fs-5 fst-italic">“Me encanta el diseño y lo fácil que es usarlo.”</p>
+                        <h5 class="mt-3">– Laura P.</h5>
+                        <div class="mb-2 slider-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
 
     <script src="./js/pages.js"></script>
 
