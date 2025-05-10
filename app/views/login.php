@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -39,7 +41,8 @@
     <p style="color: red;"><?php echo $_SESSION["error"]; unset($_SESSION["error"]); ?></p>
         <?php endif; ?>
 
-        <form method="POST" class="formulario-contenedor" action="../views/inicio.php">
+        <form method="POST" class="formulario-contenedor" action="../controllers/loginController.php">
+
         <label class="label">Email:</label>
         <input type="email" name="email" required class="input" ><br>
     

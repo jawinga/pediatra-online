@@ -2,6 +2,8 @@
     session_start();
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -31,6 +33,28 @@
             <img src="./img/inicio-img/header inicio.png" alt="Madre con su hijo">
         </div>
     </section>
+
+    
+
+
+    <?php
+        if (isset($_SESSION["usuario_id"])) {
+            echo "Bienvenido, " . htmlspecialchars($_SESSION["nombre_usuario"]);
+            
+        } else {
+                echo "No has iniciado sesión.";
+                }
+    ?>
+
+    <?php if (isset($_SESSION["usuario_id"])): ?>
+    <section class="text-center my-5">
+    <a href="hijoFormulario.php" class="btn btn-success btn-lg">
+        <i class="bi bi-person-plus-fill"></i> Añadir hijo o hija
+    </a>
+    </section>
+    <?php endif; ?>
+
+
     
     <section class="info">
         <div class="info-content">

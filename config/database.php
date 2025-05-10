@@ -1,5 +1,5 @@
 <?php
-$host = "localhost";
+$host = "127.0.0.1";
 $dbname = "calendario-pediatra"; // <- Aquí está el cambio importante
 $username = "root"; // Cambia si usas otro usuario en MySQL
 $password = ""; // Añade tu contraseña si la tienes
@@ -11,4 +11,8 @@ try {
 } catch (PDOException $e) {
     die("Error de conexión: " . $e->getMessage());
 }
+
+return $conn; // <- esto es clave
+
+
 ?>
