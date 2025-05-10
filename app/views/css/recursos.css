@@ -96,7 +96,7 @@ body {
   margin-left: 6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: min-content repeat(2, 1fr);
+  grid-template-rows: auto;
   justify-items: center;
   row-gap: 2rem;
   column-gap: 2rem;
@@ -310,5 +310,19 @@ body {
   color: rgba(19, 64, 94);
   text-decoration: underline;
   font-weight: 500;
+  cursor: pointer;
+}
+
+/* <div class="recursos-filtrar">
+
+		<a><div class="recrusos-filtrar-educacion">Educación</div></a>
+		<a><div class="recrusos-filtrar-educacion">Psicología</div></a>
+		<a><div class="recrusos-filtrar-educacion">Nutrición</div></a>
+
+	</div> */
+
+.recursos-filtrar {
+  display: flex;
+  gap: 2rem;
   cursor: pointer;
 }
