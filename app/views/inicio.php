@@ -37,24 +37,36 @@
 
     
 
-
     <?php
-        if (isset($_SESSION["usuario_id"])) {
-            echo "Bienvenido, " . htmlspecialchars($_SESSION["nombre_usuario"]);
-            
-        } else {
-                echo "No has iniciado sesión.";
-                }
+        require_once __DIR__ . '/../../config/database.php';
+        require_once __DIR__ . '/../models/Hijo.php';
+
+        if (!isset($_SESSION['usuario_id'])) {
+             header("Location: login.php");
+            exit();
+        }
+
+    $hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
     ?>
 
-    <?php if (isset($_SESSION["usuario_id"])): ?>
-    <section class="text-center my-5">
-    <a href="hijoFormulario.php" class="btn btn-success btn-lg">
-        <i class="bi bi-person-plus-fill"></i> Añadir hijo o hija
-    </a>
-    </section>
-    <?php endif; ?>
+    <section class="container-hijos gap-4">
+        <?php if (empty($hijos)): ?>
+         <p class="text-muted">No has añadido ningún hijo o hija todavía.</p>
+        <?php else: ?>
+            <h1>Tus Hijos</h1>
+            <div class="lista-hijos-inicio d-flex align-items-center gap-4">
 
+            <?php foreach ($hijos as $hijo): ?>
+            <?php include __DIR__ . '/../components/hijo-carta.php'; ?>
+            <?php endforeach; ?>
+            <a href="hijoFormulario.php" class="btn btn-success btn-lg" style="height: fit-content;">
+                <i class="bi bi-person-plus-fill"></i>
+            </a>
+
+            </div>
+            
+        <?php endif; ?>
+        </section>
 
     
     <section class="info">
