@@ -1,12 +1,11 @@
 <?php
 
-
 require_once(__DIR__ . '/../../config/database.php');
 
 class Hijo {
-    public static function crear($conn, $usuario_id, $nombre, $fecha_nacimiento, $sexo) {
-        $stmt = $conn->prepare("INSERT INTO hijos (usuario_id, nombre, fecha_nacimiento, sexo) VALUES (?, ?, ?, ?)");
-        return $stmt->execute([$usuario_id, $nombre, $fecha_nacimiento, $sexo]);
+    public static function crear($conn, $usuario_id, $nombre, $fecha_nacimiento, $sexo, $avatar) {
+        $stmt = $conn->prepare("INSERT INTO hijos (usuario_id, nombre, fecha_nacimiento, sexo, avatar) VALUES (?, ?, ?, ?, ?)");
+        return $stmt->execute([$usuario_id, $nombre, $fecha_nacimiento, $sexo, $avatar]);
     }
 
     public static function obtenerPorUsuario($conn, $usuario_id) {
@@ -15,7 +14,4 @@ class Hijo {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
-
-
-
 ?>
