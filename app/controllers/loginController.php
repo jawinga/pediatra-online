@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($usuario && password_verify($password, $usuario['password_hash'])) {
         $_SESSION["usuario_id"] = $usuario["id"];
         $_SESSION["nombre_usuario"] = $usuario["nombre"];
+        $_SESSION["apellido_usuario"] = $usuario["apellidos"]; 
         $_SESSION["mensaje"] = "¡Ha iniciado sesión!";
         session_write_close();
 

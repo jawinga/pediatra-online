@@ -7,13 +7,20 @@
     <h3><?= htmlspecialchars($hijo['nombre']) ?></h3>
 
     <p>Edad: 
-      <?php
-        // Calcular edad desde la fecha de nacimiento
-        $fechaNac = new DateTime($hijo['fecha_nacimiento']);
-        $hoy = new DateTime();
-        $edad = $hoy->diff($fechaNac)->y;
-        echo $edad;
-      ?>
+    <?php
+    $fechaNac = new DateTime($hijo['fecha_nacimiento']);
+    $hoy = new DateTime();
+  $intervalo = $hoy->diff($fechaNac);
+
+    if ($intervalo->y < 1) {
+    // Menor de 1 año → mostrar en meses
+    echo $intervalo->m . ' mes' . ($intervalo->m !== 1 ? 'es' : '');
+    } else {
+    // 1 año o más → mostrar en años
+    echo $intervalo->y . ' año' . ($intervalo->y !== 1 ? 's' : '');
+    }
+?>
+
     </p>
 
     
