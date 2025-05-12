@@ -10,11 +10,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../components/components.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<!--Bootstraps icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../components/sin-hijos-banner/sin-hijos-banner.css">
 
     <title>PediVax</title>
     <link rel="stylesheet" href="./css/pageStyle.css">
@@ -51,7 +52,7 @@
 
     <section class="container-hijos gap-4">
         <?php if (empty($hijos)): ?>
-         <p class="text-muted">No has añadido ningún hijo o hija todavía.</p>
+         <?php include "../components/sin-hijos-banner/sin-hijos-banner.php" ?>
         <?php else: ?>
             <h1>Tus Hijos</h1>
             <div class="lista-hijos-inicio d-flex align-items-center gap-4">

@@ -14,6 +14,7 @@ if (!isset($_SESSION['usuario_id'])) {
     <link rel="stylesheet" href="../components/components.css"> <!-- opcional -->
     <link rel="stylesheet" href="../views/css/crearHijo.css">
     <link rel="stylesheet" href="../views/css/pageStyle.css">
+    <link rel="stylesheet" href="../components/sin-hijos-banner/sin-hijos-banner.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +77,7 @@ if (!isset($_SESSION['usuario_id'])) {
 
     <?php
 
-       include('../components/hijo-carta.php'); 
+       include('../components/sin-hijos-banner/sin-hijos-banner.php');
 
 
         ?>

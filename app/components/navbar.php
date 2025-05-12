@@ -19,7 +19,7 @@ $isLoggedIn = isset($_SESSION['usuario_id']);
 
     <?php if ($isLoggedIn): ?>
         <div class="auth-buttons">
-            <a href="./perfil.php" class="btn register btn-secondary"><strong>Ir al perfil</strong></a>
+            <a href="../views/perfil.php" class="btn register btn-secondary"><strong>Ir al perfil</strong></a>
             <a href="./logout.php" class="btn login btn-primary"><strong>Cerrar Sesión</strong></a>
         </div>
     <?php else: ?>        
