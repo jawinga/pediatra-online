@@ -18,7 +18,7 @@
 
 </head>
 <body>
-    <header><?php include('../components/navbar.php'); ?></header>
+    <header><?php include(__DIR__ . '/../components/navbar.php'); ?></header>
 
     <main>
         <section class="hero">
@@ -26,12 +26,16 @@
             <p>Haznos saber tus dudas rellenando este formulario.</p>
         </section>
 
-        <form method="post" action="addEvent2.php">
+        <form method="post" action="../controllers/contactFormController.php">
             <label for="nombre_contactForm">Nombre:</label>
             <input type="text" name="nombre_contactForm" id="nombre_contactForm" required><br><br>
+            <label for="email_contactForm">Correo:</label>
+            <input type="email" name="email_contactForm" id="email_contactForm" required><br><br>
             <label for="asunto_contactForm">Asunto:</label>
             <input type="text" name="asunto_contactForm" id="asunto_contactForm" required><br><br>
-            <label for="mensaje_contactForm" name="mensaje_contactForm" id="mensaje_contactForm">Mensaje:</label><textarea></textarea>
+            <label for="mensaje_contactForm">Mensaje:</label>
+            <textarea name="mensaje_contactForm" id="mensaje_contactForm" required></textarea>
+            
             
             <input type="submit" class="btn btn-success" value="Enviar">
         </form>
@@ -94,7 +98,7 @@
 
     <script src="./js/pages.js"></script>
 
-    <?php include('../components/footer.php'); ?>
+    <?php include(__DIR__ . '/../components/footer.php'); ?>
 
 </body>
 </html>

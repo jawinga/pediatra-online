@@ -17,7 +17,7 @@
 <header>  
   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
-      <div class="logo"><img src="./img/logoPedivax" alt="PediVax"></div>
+      <div class="logo"><img src="/pediatra-online/app/views/img/logoPedivax.png" alt="PediVax"></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         &#9776;
       </button>

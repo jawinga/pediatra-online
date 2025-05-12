@@ -19,7 +19,7 @@
 </head>
 <body>
     
-    <header><?php include('../components/navbar.php'); ?></header>
+    <header><?php include(__DIR__ . '/../components/navbar.php'); ?></header>
 
     <section class="hero">
         <h1>¿Quiénes somos?</h1>
@@ -163,7 +163,7 @@
 
     <script src="./js/pages.js"></script>
 
-    <?php include('../components/footer.php'); ?>
+    <?php include(__DIR__ . '/../components/footer.php'); ?>
 
 </body>
 </html>

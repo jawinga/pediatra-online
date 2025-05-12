@@ -22,7 +22,7 @@
 </head>
 <body>
     
-    <header><?php include('../components/navbar.php'); ?></header>
+    <header><?php include(__DIR__ . '/../components/navbar.php'); ?></header>
     
     <section class="hero">
         <div class="hero-content">
@@ -117,7 +117,7 @@
 
     <script src="./js/pages.js"></script>
 
-    <?php include('../components/footer.php'); ?>
+    <?php include(__DIR__ . '/../components/footer.php'); ?>
 
 </body>
 </html>
