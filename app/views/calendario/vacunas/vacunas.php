@@ -256,18 +256,11 @@ $vacunas = [
   </div>
   <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto"> <!-- Alinea los enlaces a la derecha -->
-        <li class="nav-item">
-          <a class="nav-link" href="../vacunas/porquevacunar.php">¿Por qué vacunar?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../vacunas/vacunas.php">Preguntas frecuentes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../calendario/calendario.php">Calendario</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../inicio.php">Inicio</a>
-        </li>
+     <li class="nav-item"><a class="nav-link active" href="./calendario.php">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/vacunas.php">Vacunas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/porquevacunar.php">Por qué vacunar</a></li>
+          <li class="nav-item"><a class="nav-link" href="./vacunas/preguntas.php">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../inicio.php">Inicio</a></li>
       </ul>
     </div>
 </div>
