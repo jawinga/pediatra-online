@@ -22,48 +22,53 @@
     <header><?php include(__DIR__ . '/../components/navbar.php'); ?></header>
 
     <section class="hero">
-        <h1>¿Quiénes somos?</h1>
-        <p>Conoce el equipo detrás de PediVax.</p>
+        <div class="hero-content">
+            <h1>¿Quiénes somos PediVax?</h1>
+            <p>¡Conoce el equipo detrás de PediVax y toda la historia que hay detrás de nuestra humilde empresa!</p>
+        </div>
+        <div class="hero-image">
+            <img src="./img/inicio-img/header inicio.png" alt="Madre con su hijo">
+        </div>
     </section>
     
     <section class="info">
         <div class="info-content">
-            <h2>Nuestro equipo</h2>
+            <h2>🧑‍🤝‍🧑Nuestro equipo</h2>
             <p>Somos un grupo de expertos en el sector de desarrollo web respaldados por los mejores profesionales del sector de la salud, especializados tanto en vacunas
                 como en pediatría
             </p>
         </div>
         <div class="info-image">
-            <img src="https://via.placeholder.com/400x300?text=Niño+vacunado" alt="Vacunación infantil">
+            <img src="./img/quienesSomos-img/equipo-medico.png" alt="Equipo médico">
         </div>
     </section>
 
     <section class="info">
         <div class="info-content">
-            <h2>Nuestra misión</h2>
-            <p>El cuidado de los más pequeños de la casa es algo complicado, por ello nos hemos querido comprometer a facilitar a los padres el seguimiento de las vacunas y citas
+            <h2 class="text-pink">🎯Nuestra misión</h2>
+            <p class="text-white">El cuidado de los más pequeños de la casa es algo complicado, por ello nos hemos querido comprometer a facilitar a los padres el seguimiento de las vacunas y citas
                 médicas para sus hijos.
             </p>
         </div>
         <div class="info-image">
-            <img src="https://via.placeholder.com/400x300?text=Calendario" alt="Calendario de vacunación">
+            <img src="./img/quienesSomos-img/medico-vacunando.png" alt="Nuestra misión">
         </div>
     </section>
 
 <section class="info">
     <div class="info-content">
-        <h2>¿Quién está detrás de PediVax?</h2>
+        <h2>🧬¿Quién está detrás de PediVax?</h2>
         <p>Somos un equipo multidisciplinar formado por desarrolladores web apasionados por la tecnología y profesionales del sector sanitario, especialmente en el ámbito de la pediatría y la vacunación. Nuestra misión es facilitar a las familias el seguimiento de las vacunas y citas médicas de sus hijos, contribuyendo así al bienestar infantil.</p>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Equipo+PediVax" alt="Equipo PediVax">
+        <img src="./img/quienesSomos-img/madre-vacunando(cambiar).webp" alt="Equipo PediVax">
     </div>
 </section>
 
 <section class="info">
     <div class="info-content">
-        <h2>¿Cómo nació PediVax?</h2>
-        <p>PediVax surge de una necesidad real: muchos padres y madres olvidaban citas importantes o no sabían cuándo tocaba cada vacuna. Nuestro equipo decidió crear una herramienta digital clara, intuitiva y confiable que ayude a llevar un control eficaz del calendario de vacunación pediátrica.</p>
+        <h2 class="text-pink">💡¿Cómo nació PediVax?</h2>
+        <p class="text-white">PediVax surge de una necesidad real: muchos padres y madres olvidaban citas importantes o no sabían cuándo tocaba cada vacuna. Nuestro equipo decidió crear una herramienta digital clara, intuitiva y confiable que ayude a llevar un control eficaz del calendario de vacunación pediátrica.</p>
     </div>
     <div class="info-image">
         <img src="https://via.placeholder.com/400x300?text=Nacimiento+del+proyecto" alt="Origen de la idea">
@@ -72,7 +77,7 @@
 
 <section class="info">
     <div class="info-content">
-        <h2>Nuestros valores</h2>
+        <h2>❤️Nuestros valores</h2>
         <p>En PediVax creemos en la accesibilidad, la prevención médica, la privacidad de los datos y el acompañamiento familiar. Cada decisión de diseño y funcionalidad está pensada para hacer la vida más fácil a madres y padres, y más segura para sus hijos.</p>
     </div>
     <div class="info-image">
@@ -82,8 +87,8 @@
 
 <section class="info">
     <div class="info-content">
-        <h2>Privacidad ante todo</h2>
-        <p>Todos los datos personales y médicos de los usuarios están protegidos conforme al RGPD. Solo se utilizan con fines médicos dentro de la plataforma. Creemos firmemente en que la tecnología debe respetar siempre la confidencialidad familiar.</p>
+        <h2 class="text-pink">🔒Privacidad ante todo</h2>
+        <p class="text-white">Todos los datos personales y médicos de los usuarios están protegidos conforme al RGPD. Solo se utilizan con fines médicos dentro de la plataforma. Creemos firmemente en que la tecnología debe respetar siempre la confidencialidad familiar.</p>
     </div>
     <div class="info-image">
         <img src="https://via.placeholder.com/400x300?text=Privacidad" alt="Privacidad de datos">
@@ -92,7 +97,7 @@
 
 <section class="info">
     <div class="info-content">
-        <h2>Nuestro impacto</h2>
+        <h2>📊Nuestro impacto</h2>
         <ul>
             <li>✔ Más de 100 familias ya usan PediVax</li>
             <li>✔ 1.200 eventos médicos gestionados</li>

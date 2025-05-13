@@ -43,14 +43,15 @@ main {
   cursor: pointer;
 }
 
-.logo:hover {
-  opacity: 0.8;
-  transition: all 0.3s ease;
-}
-
 .logo img {
   max-width: 7.5rem;
   height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px #6ecdeb);
 }
 
 .scrolled {
@@ -68,6 +69,18 @@ main {
   text-wrap: nowrap;
 }
 
+.nav-links a {
+  display: inline-block;
+  transition: transform 0.8s ease-in-out 0.1s, color 0.8s ease-in-out 0.1s, text-shadow 0.8s ease-in-out 0.1s;
+}
+
+.nav-links a:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+  text-shadow: 0 6px 16px #fd5ccf;
+  color: #fd5ccf;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: #333;
@@ -75,9 +88,6 @@ main {
   padding: auto;
   border-radius: 0.3rem;
   transition: background-color 0.3s;
-}
-.nav-links a:hover {
-  color: gray;
 }
 
 .auth-buttons .btn {
@@ -109,7 +119,6 @@ main {
 
 .login:hover,
 .register:hover {
-  opacity: 0.8;
   transition: all 0.3s ease;
 }
 
@@ -192,6 +201,15 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -251,11 +269,12 @@ main {
 }
 
 .hero-content {
-  max-width: 500px;
+  max-width: 700px;
+  font-size: 1.2rem;
 }
 
 .hero-content h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -264,21 +283,19 @@ main {
   padding: 10px 20px;
   border: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
   border-radius: 5px;
 }
 
-.cta:hover {
-  background-color: #6a0dad;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
 .hero-image img {
-  width: 200px;
+  display: flex;
+  max-width: 100%;
+  width: 500px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 45% / 50%;
 }
 
 .info {
@@ -299,18 +316,25 @@ main {
 
 .info:nth-child(even) {
   flex-direction: row-reverse;
-  background-color: #f0f2f5; /* Fondo alternado para mejor visualización */
+  background: linear-gradient(to bottom,  #ffffff 0%, #7209b7 1%, #4361ee 99%, #ffffff 100%);
+  /*background: linear-gradient(to bottom,  #ffffff 0%, #4CC9F0 1%, #4361EE 99%, #ffffff 100%);*/
+ /*Fondo alterno de las secciones*/
 }
 
 .info h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
+}
+
+.text-pink {
+  color: #F72585;
 }
 
 .info-content {
   flex: 1;
   padding: 0 40px;
   max-width: 50%;
+  font-weight: bold;
 }
 
 .info-image {
@@ -431,9 +455,11 @@ h1 {
   color: #fff;
 }
 
-.btn-primary:hover {
-  background: linear-gradient(to right, #f6d365, #fda085);
-  color: #333;
+.btn-primary:hover {  
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 16px #fd5ccf;
+  background: linear-gradient(135deg, #6902d6, #095cec);
+  color: #F72585;
 }
 
 .btn-success {
@@ -453,7 +479,10 @@ h1 {
 }
 
 .btn-secondary:hover {
-  background: linear-gradient(to right, #f6d365, #fda085);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 16px #fd5ccf;
+  background: linear-gradient(135deg, #fd5ccf, #5895ff);
+  color: #ffffff;
 }
 
 .alert {
@@ -588,7 +617,7 @@ footer .bi:hover {
   color: #f72585;
 }
 
-/*Centrar el carrusel de vídeos*/
+/*Estilos del carrusel de vídeos*/
 .embed-carousel {
   display: flex;
   justify-content: center;

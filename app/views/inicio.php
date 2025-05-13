@@ -27,9 +27,9 @@
     
     <section class="hero">
         <div class="hero-content">
-            <h1>Texto para captar la atención de los usuarios</h1>
-            <p>Texto explicativo <strong>más largo</strong> para desarrollar la frase de arriba con más detalle y aprovechando la <strong>negrita</strong>.</p>
-            <button class="btn cta"><strong>¡Únete ahora!</strong></button>
+            <h1 class="mb-4">PediVax, tu calendario de vacunación interactivo</h1>
+            <p>¡Únete a más de <strong>1000 padres y madres </strong>satisfechos con nuestro servicio! La salud de los más pequeños de casa es <strong>nuestra prioridad.</strong></p>
+            <button class="btn cta">¡Únete ahora!</button>
         </div>
         <div class="hero-image">
             <img src="./img/inicio-img/header inicio.png" alt="Madre con su hijo">
@@ -42,10 +42,10 @@
         require_once __DIR__ . '/../../config/database.php';
         require_once __DIR__ . '/../models/Hijo.php';
 
-        if (!isset($_SESSION['usuario_id'])) {
+        /*if (!isset($_SESSION['usuario_id'])) {
              header("Location: login.php");
             exit();
-        }
+        }*/
 
     $hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
     ?>
@@ -72,8 +72,8 @@
     
     <section class="info">
         <div class="info-content">
-            <h2>Importancia de la vacunación infantil</h2>
-            <p>Las vacunas previenen enfermedades peligrosas. Según la OMS, evitan 2-3 millones de muertes anuales. La inmunización completa protege a los niños y a toda la comunidad.</p>
+            <h2 class="text-pink">Importancia de la vacunación infantil</h2>
+            <p class="text-white">Las vacunas previenen enfermedades peligrosas. Según la OMS, evitan 2-3 millones de muertes anuales. La inmunización completa protege a los niños y a toda la comunidad.</p>
         </div>
         <div class="info-image">
             <img src="./img/inicio-img/vacunacion.png" alt="Vacunación infantil">
@@ -92,29 +92,77 @@
 
     <section class="info">
         <div class="info-content">
-            <h2>Seguridad comprobada</h2>
-            <p>Las vacunas pasan por rigurosas pruebas. Menos del 0.01% experimenta efectos secundarios graves. Los beneficios superan ampliamente los riesgos potenciales.</p>
+            <h2 class="text-pink">Seguridad comprobada</h2>
+            <p class="text-white">Las vacunas pasan por rigurosas pruebas. Menos del 0.01% experimenta efectos secundarios graves. Los beneficios superan ampliamente los riesgos potenciales.</p>
         </div>
         <div class="info-image">
             <img src="./img/inicio-img/seguridad vacunacion.png" alt="Seguridad de vacunas">
         </div>
     </section>
 
-    <section class="info">
-        <div class="info-content">
-            <h2>Protección colectiva</h2>
-            <p>Cuando el 95% de la población está vacunada, se logra inmunidad de grupo. Esto protege a quienes no pueden vacunarse por razones médicas.</p>
-        </div>
-        <div class="info-image">
-            <img src="https://via.placeholder.com/400x300?text=Comunidad" alt="Protección colectiva">
-        </div>
-    </section>
+    <div class="mt-5">
+        <h1 class= "mt-5">¡Aquí te dejamos vídeos de interés!</h1>
+        <section class="embed-carousel">
+            <div class="div-carousel">
+                <iframe src="./carousel.html" width="50%" height="700px" frameborder="0"></iframe>
+            </div>
+        </section>
+    </div>
 
-    <section class="embed-carousel">
-        <div class="div-carousel">
-            <iframe src="./carousel.html" width="50%" height="700px" frameborder="0"></iframe>
+    <div class="d-flex justify-content-center">
+        <div id="testimonialCarousel" class="carousel slide w-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="p-4 text-center">
+                        <p class="fs-5 fst-italic">“Una experiencia maravillosa para los padres primerizos. ¡Muy recomendable!”</p>
+                        <h5 class="mt-3">– María G.</h5>
+                        <div class="mb-2 slider-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>     
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="p-4 text-center">
+                        <p class="fs-5 fst-italic">“Gracias a PediVax, no se me olvida ni una sola vacuna. ¡Genial!”</p>
+                        <h5 class="mt-3">– Javier L.</h5>
+                        <div class="mb-2 slider-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="p-4 text-center">
+                        <p class="fs-5 fst-italic">“Me encanta el diseño y lo fácil que es usarlo.”</p>
+                        <h5 class="mt-3">– Laura P.</h5>
+                        <div class="mb-2 slider-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-    </section>
+    </div>
 
     <script src="./js/pages.js"></script>
 
