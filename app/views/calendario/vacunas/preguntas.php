@@ -21,7 +21,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav-links navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="./calendario.php">Calendario</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./calendario.php">Calendario</a></li>
           <li class="nav-item"><a class="nav-link" href="./vacunas/vacunas.php">Vacunas</a></li>
           <li class="nav-item"><a class="nav-link" href="./vacunas/porquevacunar.php">Por qué vacunar</a></li>
           <li class="nav-item"><a class="nav-link" href="./vacunas/preguntas.php">Preguntas</a></li>
@@ -83,7 +83,75 @@
             </div>
           </div>
         </div>
+<!-- Pregunta 4 -->
+<div class="accordion-item shadow-lg mb-3 border-0 rounded">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button bg-warning text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      🕒 ¿Por qué no puedo esperar hasta que mi hijo empiece el colegio para ponerle las vacunas?
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Las vacunaciones deben comenzar a los 2 meses de edad, y la mayoría se administran dentro de los dos primeros años de vida. Vacunar a tu hijo a tiempo lo protege de infecciones y evita que contagie a otros en la escuela o guardería.
+    </div>
+  </div>
+</div>
 
+<!-- Pregunta 5 -->
+<div class="accordion-item shadow-lg mb-3 border-0 rounded">
+  <h2 class="accordion-header" id="headingFive">
+    <button class="accordion-button bg-warning text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      🧬 ¿Es mejor la inmunidad natural que la vacunación?
+    </button>
+  </h2>
+  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      No. En general, es mejor prevenir la enfermedad mediante la vacunación que contraer la infección. Algunas enfermedades pueden tener consecuencias graves, como sordera o daño cerebral, que se pueden evitar con las vacunas.
+    </div>
+  </div>
+</div>
+
+<!-- Pregunta 6 -->
+<div class="accordion-item shadow-lg mb-3 border-0 rounded">
+  <h2 class="accordion-header" id="headingSix">
+    <button class="accordion-button bg-warning text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      🌍 ¿Es necesario vacunar a mi hijo si todos los demás niños están vacunados?
+    </button>
+  </h2>
+  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Sí. Aunque la mayoría de los niños estén vacunados, tu hijo aún puede estar expuesto a personas no vacunadas en otros entornos. Vacunarlo protege su salud y contribuye a la inmunidad colectiva.
+    </div>
+  </div>
+</div>
+
+<!-- Pregunta 7 -->
+<div class="accordion-item shadow-lg mb-3 border-0 rounded">
+  <h2 class="accordion-header" id="headingSeven">
+    <button class="accordion-button bg-warning text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+      🧪 ¿Las vacunas pueden causar enfermedades?
+    </button>
+  </h2>
+  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      No. Las vacunas contienen gérmenes inactivos, debilitados o solo una parte del germen que causa la enfermedad. No pueden causar la enfermedad, sino que ayudan al sistema inmunológico a aprender a combatirla.
+    </div>
+  </div>
+</div>
+
+<!-- Pregunta 8 -->
+<div class="accordion-item shadow-lg mb-3 border-0 rounded">
+  <h2 class="accordion-header" id="headingEight">
+    <button class="accordion-button bg-warning text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+      🧒 ¿Cuáles son los efectos secundarios más comunes de las vacunas en niños?
+    </button>
+  </h2>
+  <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Los efectos secundarios más comunes son leves y temporales, como dolor, hinchazón o enrojecimiento en el lugar de la inyección, fiebre leve o malestar general. Estos síntomas suelen desaparecer en pocos días.
+    </div>
+  </div>
+</div>
         <!-- Aquí puedes añadir más preguntas si lo deseas -->
       </div>
 

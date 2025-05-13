@@ -13,7 +13,7 @@ $isLoggedIn = isset($_SESSION['usuario_id']);
         </a>
     </div>   
     <ul class="nav-links">
-        <li><a href="<?= BASE_URL ?>app/views/calendario/calendario.php">Calendario</a></li>
+        <li><a href="<?= BASE_URL ?>app/views/index.php">Calendario</a></li>
         <li><a href="<?= BASE_URL ?>app/views/quienesSomos.php">Quiénes somos</a></li>
         <li><a href="<?= BASE_URL ?>app/views/recursos.php">Recursos</a></li>
         <li><a href="<?= BASE_URL ?>app/views/contacto.php">Contacto</a></li>

@@ -29,6 +29,8 @@
     <?php else: ?>
     <i class="bi bi-gender-female" style="color:#f72585;"></i> Niña
     <?php endif; ?>
+
+  
     <button>Editar</button> <!-- enlazar a editarHijo.php?id=<?= $hijo['id'] ?> -->
   </div>
 </div>
