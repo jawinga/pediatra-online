@@ -1,24 +1,26 @@
 .perfil-container {
-  max-width: 600px;
-  margin: 4rem auto;
+  width: 800px;
   background: linear-gradient(135deg, #ffe3ec, #d0bfff);
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(180, 180, 180, 0.15);
-  transform: translateY(150px);
+  transform: translateY(100px);
 }
 
 .perfil-container h2 {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  padding-top: 1.5rem;
 }
 
 .perfil-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   align-items: center;
-  gap: 1.5rem;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 
 .perfil-icon {
@@ -32,4 +34,14 @@
   font-size: 1.1rem;
   color: #333;
   font-family: "Montserrat", sans-serif;
+}
+
+.btn-editar-perfil {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 6px !important;
+}
+
+.alert {
+  margin-top: 2rem;
 }

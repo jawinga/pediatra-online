@@ -19,6 +19,11 @@ class Cita {
         $stmt->execute([$hijo_id]);
         return $stmt->fetchColumn();
     }
+      public static function obtenerProximaPorHijo($conn, $hijo_id) {
+    $stmt = $conn->prepare("SELECT fecha, tipo_vacuna, centro_medico FROM citas WHERE hijo_id = ? AND fecha >= NOW() ORDER BY fecha ASC LIMIT 1");
+    $stmt->execute([$hijo_id]);
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+}
     
 
 }

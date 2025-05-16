@@ -28,20 +28,61 @@ if (!isset($_SESSION['usuario_id'])) {
 <?php include('../components/navbar.php'); ?>
 
 <section class="perfil-container container">
-  <h2>Mi perfil</h2>
+  <h2><strong>Mi perfil</strong></h2>
 
   <div class="perfil-card">
-    <i class="bi bi-person-circle perfil-icon"></i>
 
-    <div class="perfil-info">
-      <p><strong>Nombre:</strong> <?= htmlspecialchars($_SESSION['nombre_usuario']) ?></p>
-      <p><strong>Apellidos:</strong> <?= htmlspecialchars($_SESSION['apellido_usuario'] ?? 'No disponible') ?></p>
-      <p><strong>Email:</strong> <?= htmlspecialchars($_SESSION['email_usuario'] ?? 'No disponible') ?></p>
-    </div>
+  
+
+    <form method="POST" action="../controllers/actualizarPerfil.php" class="perfil-info">
+          <i class="bi bi-person-circle perfil-icon"></i>
+
+      <p><strong>Nombre:</strong> 
+      <input type="text" name="nombre" value="<?= htmlspecialchars($_SESSION['nombre_usuario']) ?>">  
+    </p>
+      <p><strong>Apellidos:</strong> 
+      
+     <input type="text" name="apellidos" value="<?= htmlspecialchars($_SESSION['apellido_usuario'] ?? 'No disponible') ?>"> 
+    
+    </p>
+      <button type="submit" class="btn login btn-primary btn-editar-perfil">Editar perfil</button>
+
+    </form>
   </div>
 
-  <a href="editarPerfil.php" class="auth-buttons">Editar perfil</a>
 </section>
-    
+
+<script>
+  const mensaje = "<?= $_SESSION['mensaje'] ?? '' ?>";
+  const error = "<?= $_SESSION['error'] ?? '' ?>";
+
+  if (mensaje) {
+    showAlert(mensaje, 'success');
+    <?php unset($_SESSION['mensaje']); ?>
+  }
+
+  if (error) {
+    showAlert(error, 'danger');
+    <?php unset($_SESSION['error']); ?>
+  }
+
+  function showAlert(text, type = 'success') {
+    const alert = document.createElement('div');
+    alert.className = `alert alert-${type} alert-dismissible fade show`;
+    alert.role = 'alert';
+    alert.innerHTML = `${text}`;
+
+    document.body.prepend(alert); 
+
+    setTimeout(() => {
+      alert.classList.remove('show');
+      alert.classList.add('hide');
+      setTimeout(() => alert.remove(), 300);
+    }, 4000);
+  }
+</script>
+
+
+
 </body>
 </html>

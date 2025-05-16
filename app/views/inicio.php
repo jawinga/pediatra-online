@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="../components/sin-hijos-banner/sin-hijos-banner.css">
+    
 
     <title>PediVax</title>
     <link rel="stylesheet" href="./css/pageStyle.css">
@@ -62,6 +63,7 @@
         </div>
     </section>
 
+
     <!-- Sección del banner para añadir hijos -->
     <section class="container-hijos gap-4">
         <?php if (empty($hijos)): ?>
@@ -70,17 +72,44 @@
             <h1>Tus Hijos</h1>
             <div class="lista-hijos-inicio d-flex align-items-center gap-4">
 
+    
+
+   <?php
+require_once __DIR__ . '/../../config/database.php';
+require_once __DIR__ . '/../models/Hijo.php';
+require_once __DIR__ . '/../models/Cita.php';
+
+$hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
+?>
+
+<section class="container-hijos gap-4">
+    <?php if (empty($hijos)): ?>
+        <?php include "../components/sin-hijos-banner/sin-hijos-banner.php" ?>
+    <?php else: ?>
+        <h1>Tus Hijos</h1>
+        <div class="lista-hijos-inicio gap-4">
+
+
             <?php foreach ($hijos as $hijo): ?>
-            <?php include __DIR__ . '/../components/hijo-carta.php'; ?>
+                <?php 
+                    // Obtener la próxima cita para este hijo
+                    $proximaCita = Cita::obtenerProximaPorHijo($conn, $hijo['id']);
+                ?>
+                <?php 
+                    // Incluye la carta pasando ambas variables
+                    // Importante: en hijo-carta.php usas $hijo y $proximaCita
+                    include __DIR__ . '/../components/hijo-carta.php'; 
+                ?>
             <?php endforeach; ?>
+
             <a href="hijoFormulario.php" class="btn btn-success btn-lg" style="height: fit-content;">
                 <i class="bi bi-person-plus-fill"></i>
             </a>
 
-            </div>
-            
-        <?php endif; ?>
-        </section>
+        </div>
+    <?php endif; ?>
+</section>
+
 
     <!-- Sección del cuerpo general -->
     <section class="info">

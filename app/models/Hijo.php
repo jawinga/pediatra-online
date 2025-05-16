@@ -13,5 +13,8 @@ class Hijo {
         $stmt->execute([$usuario_id]);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+  
+
 }
 ?>
