@@ -7,7 +7,7 @@
 
 <div class="sin-hijos-imagen">
 
-    <a href="../../../app/views/hijoFormulario.php" >Añade ahora</a>
+    <a href="/pediatra-online/app/views/hijoFormulario.php" >Añade ahora</a>
 
 </div>
 

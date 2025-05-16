@@ -1,3 +1,3 @@
 <?php
-define('BASE_URL', '/pediatra-online/');
+    #define('BASE_URL', '/pediatra-online/');
 ?>

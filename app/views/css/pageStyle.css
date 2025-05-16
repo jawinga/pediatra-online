@@ -1,3 +1,4 @@
+/*CSS genérico del cuerpo*/
 html,
 body {
   height: 100%;
@@ -16,418 +17,6 @@ body {
 main {
   flex: 1;
 
-}
-
-/*Comienza el contenido de la navbar*/
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5%; /* Usamos porcentaje para mejor adaptación */
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  z-index: 1000;
-  box-sizing: border-box;
-}
-
-.logo {
-  color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.logo img {
-  max-width: 7.5rem;
-  height: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.logo img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 10px #6ecdeb);
-}
-
-.scrolled {
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.87rem;
-  white-space: nowrap;
-  margin: 0 auto; /* Centra los links en el espacio disponible */
-  padding: 0 1.25rem; /* Espacio interno para evitar pegado a los bordes */
-  text-wrap: nowrap;
-}
-
-.nav-links a {
-  display: inline-block;
-  transition: transform 0.8s ease-in-out 0.1s, color 0.8s ease-in-out 0.1s, text-shadow 0.8s ease-in-out 0.1s;
-}
-
-.nav-links a:hover {
-  transition: all 0.2s ease;
-  transform: scale(1.05);
-  text-shadow: 0 6px 16px #fd5ccf;
-  color: #fd5ccf;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  padding: auto;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s;
-}
-
-.auth-buttons .btn {
-  font-family: "Montserrat", sans-serif;
-  padding: 0.62rem 0.75rem;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: background-color 0.3s;
-  text-wrap: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem; /* Reemplaza los márgenes individuales */
-  margin-right: 1rem; /* Margen derecho adicional para el contenedor */
-}
-
-.login {
-  margin-right: 15px;
-  background-color: #50b4e6;
-  color: white;
-}
-
-.register {
-  margin-right: 30px;
-  background-color: #6a0dad;
-  color: white;
-}
-
-.login:hover,
-.register:hover {
-  transition: all 0.3s ease;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Media queries ajustados */
-@media screen and (max-width: 1200px) {
-  .nav-links {
-    gap: 20px; /* Espacio aún más reducido en pantallas medianas */
-  }
-
-  .auth-buttons {
-    gap: 5px;
-    margin-right: 10px;
-  }
-}
-
-/* Salta el modo móvil */
-@media screen and (max-width: 1100px) {
-  .navbar {
-    padding: 15px 20px; /* Más padding lateral en móvil */
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    gap: 15px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .auth-buttons {
-    order: 2;
-    margin-left: auto;
-    margin-right: 20px; /* Aseguramos margen derecho */
-  }
-
-  .auth-buttons .btn {
-    font-size: 1rem;
-  }
-
-  .auth-buttons .login {
-    margin-right: 10px;
-  }
-
-  .auth-buttons .register {
-    margin-right: auto;
-  }
-
-  .menu-toggle {
-    display: block;
-    order: 3;
-    margin-left: 0;
-    padding-right: 0;
-    font-size: 1.8rem;
-    flex-shrink: 0;
-  }
-
-  .logo {
-    order: 1;
-    margin-left: 0;
-    max-width: 120px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-image {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .info,
-  .info:nth-child(even) {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .info-content,
-  .info-image {
-    max-width: 100%;
-    padding: 20px 0;
-  }
-
-  .info-image {
-    margin-top: 20px;
-    order: 2;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .auth-buttons .btn {
-    font-size: 0.9rem;
-  }
-
-  .menu-toggle {
-    font-size: 1.6rem;
-  }
-
-  .navbar {
-    padding: 15px 10px;
-  }
-
-  .auth-buttons {
-    margin-right: 10px;
-  }
-}
-
-.auth-buttons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
-}
-
-/*fin sección de la navbar y empieza el cuerpo del documento*/
-
-.hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: linear-gradient(to right, #2a52be, #6a0dad);
-  color: white;
-  padding: 100px 50px 50px;
-}
-
-.hero-content {
-  max-width: 700px;
-  font-size: 1.2rem;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.cta {
-  background-color: #ff3b5c;
-  padding: 10px 20px;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-
-.hero-image img {
-  display: flex;
-  max-width: 100%;
-  width: 500px;
-  height: auto;
-  border-radius: 45% / 50%;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 5%;
-  text-align: left;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.info.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.info:nth-child(even) {
-  flex-direction: row-reverse;
-  background: linear-gradient(to bottom,  #ffffff 0%, #7209b7 1%, #4361ee 99%, #ffffff 100%);
-  /*background: linear-gradient(to bottom,  #ffffff 0%, #4CC9F0 1%, #4361EE 99%, #ffffff 100%);*/
- /*Fondo alterno de las secciones*/
-}
-
-.info h2 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.text-pink {
-  color: #F72585;
-}
-
-.info-content {
-  flex: 1;
-  padding: 0 40px;
-  max-width: 50%;
-  font-weight: bold;
-}
-
-.info-image {
-  flex: 1;
-  max-width: 40%;
-  text-align: center;
-}
-
-.info-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.info-image img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-/*Barra de scroll con colores*/
-
-body::-webkit-scrollbar {
-  width: 15px;
-}
-
-body::-webkit-scrollbar-track {
-  background: linear-gradient(
-    165deg,
-    rgb(247, 1, 214) 35%,
-    #6a0dad,
-    rgb(255, 255, 255)
-  );
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(114, 114, 114);
-  border-radius: 20px;
-}
-
-/*Específico de la página Contacto*/
-
-form,
-.card,
-.alert,
-.container,
-.mt-4 {
-  max-width: 500px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-/*Fin de estilos de la página Contacto*/
-
-/*Estilos apartado legal*/
-
-.legal-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/*Fin de estilos del apartado legal*/
-
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="date"],
-input[type="email"],
-textarea,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 2px solid #dee2e6;
-  border-radius: 12px;
-  background-color: #f9f9fb;
-  transition: border-color 0.3s;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #caa0f5;
-  outline: none;
 }
 
 h1,
@@ -515,9 +104,472 @@ a:hover {
   margin-top: 1rem;
   padding: 20px;
 }
+/*Fin CSS genérico del cuerpo*/
 
-/*Específico de la página de Quiénes somos*/
+/*CSS de la navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%; /* Usamos porcentaje para mejor adaptación */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+  box-sizing: border-box;
+}
 
+.logo {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo img {
+  max-width: 7.5rem;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px #6ecdeb);
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.87rem;
+  white-space: nowrap;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  text-wrap: nowrap;
+}
+
+.nav-links a {
+  display: inline-block;
+  transition: transform 0.8s ease-in-out 0.1s, color 0.8s ease-in-out 0.1s, text-shadow 0.8s ease-in-out 0.1s;
+}
+
+.nav-links a:hover {
+  transition: all 0.2s ease;
+  transform: scale(1.05);
+  text-shadow: 0 6px 16px #fd5ccf;
+  color: #fd5ccf;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: auto;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.auth-buttons .btn {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.62rem 0.75rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  text-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-right: 1rem;
+}
+
+.login {
+  margin-right: 15px;
+  background-color: #50b4e6;
+  color: white;
+}
+
+.register {
+  margin-right: 30px;
+  background-color: #6a0dad;
+  color: white;
+}
+
+.login:hover,
+.register:hover {
+  transition: all 0.3s ease;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Media queries*/
+@media screen and (max-width: 1400px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .auth-buttons {
+    gap: 5px;
+    margin-right: 10px;
+  }
+}
+
+/* Salta el modo móvil */
+@media screen and (max-width: 1300px) {
+  .navbar {
+    padding: 15px 20px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .auth-buttons {
+    order: 2;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .auth-buttons .btn {
+    font-size: 1rem;
+  }
+
+  .auth-buttons .login {
+    margin-right: 10px;
+  }
+
+  .auth-buttons .register {
+    margin-right: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+    order: 3;
+    margin-left: 0;
+    padding-right: 0;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    order: 1;
+    margin-left: 0;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info,
+  .info:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .info-content,
+  .info-image {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .info-image {
+    margin-top: 20px;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .auth-buttons .btn {
+    font-size: 0.9rem;
+  }
+
+  .menu-toggle {
+    font-size: 1.6rem;
+  }
+
+  .navbar {
+    padding: 15px 10px;
+  }
+
+  .auth-buttons {
+    margin-right: 10px;
+  }
+}
+/*Fin CSS de la navbar*/
+
+/*CSS de inicio.php*/
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to right, #2a52be, #6a0dad);
+  color: white;
+  padding: 100px 50px 50px;
+}
+
+.hero-content {
+  max-width: 700px;
+  font-size: 1.2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.cta {
+  background-color: #ff3b5c;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.calendario-personal {
+  background-color: #4CC9F0;
+  padding: 10px 20px;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  display: flex;
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  border-radius: 45% / 50%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.info.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info:nth-child(even) {
+  flex-direction: row-reverse;
+  background: linear-gradient(to bottom,  #ffffff 0%, #7209b7 1%, #4361ee 99%, #ffffff 100%);
+}
+
+.info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.text-pink {
+  color: #F72585;
+}
+
+.info-content {
+  flex: 1;
+  padding: 0 40px;
+  max-width: 50%;
+  font-weight: bold;
+}
+
+.info-image {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+/*Fin CSS de inicio.php*/
+
+/*CSS de FAQ*/
+.qm-color {
+  color: linear-gradient(to right, #e968c4, #3974da);
+}
+
+.faq-container {
+  background: linear-gradient(to right, #2a52be, #6a0dad);
+  box-shadow: #333;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
+
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button {
+  color: white;
+  background: linear-gradient(to right, #4767c0, #7b3ba8);
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accordion-button.collapsed::after {
+  filter: brightness(0) invert(1);
+}
+
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(255, 105, 180, 0.5);
+}
+
+.accordion-body {
+  background: linear-gradient(to right, #fa85d9, #72a1f1);
+  font-size: 1rem;
+  padding-bottom: 12px;
+}
+/*Fin CSS de FAQ*/
+
+/*CSS de la barra de scroll con colores*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(
+    165deg,
+    rgb(247, 1, 214) 35%,
+    #6a0dad,
+    rgb(255, 255, 255)
+  );
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 114, 114);
+  border-radius: 20px;
+}
+/*Fin CSS de la barra de scroll con colores*/
+
+/*CSS de contacto.php*/
+form,
+.card,
+.alert,
+.container,
+.mt-4 {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #dee2e6;
+  border-radius: 12px;
+  background-color: #f9f9fb;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #caa0f5;
+  outline: none;
+}
+/*Fin CSS de contacto.php*/
+
+/*CSS apartado legal*/
+.legal-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*Fin CSS apartado legal*/
+
+/*CSS de quienesSomos.php*/
 #testimonialCarousel .carousel-inner {
   background: linear-gradient(to right, #2a52be, #6a0dad);
   border-radius: 1rem;
@@ -559,8 +611,9 @@ a:hover {
 #testimonialCarousel {
   max-width: 50%;
 }
+/*Fin CSS de quienesSomos.php*/
 
-/*Footer*/
+/*CSS Footer*/
 footer {
   background: linear-gradient(to right, #2a52be, #6a0dad);
   color: white;
@@ -616,8 +669,9 @@ footer .bi:hover {
 .fw-semibold {
   color: #f72585;
 }
+/*Fin CSS Footer*/
 
-/*Estilos del carrusel de vídeos*/
+/*CSS carousel.html*/
 .embed-carousel {
   display: flex;
   justify-content: center;
@@ -626,16 +680,18 @@ footer .bi:hover {
 }
 
 .div-carousel {
-  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-  max-width: 62rem; /* Establece un máximo para que no se expanda demasiado */
+  width: 100%;
+  max-width: 62rem;
 }
 
 .div-carousel iframe {
-  width: 100%; /* Asegura que el iframe ocupe el 100% del contenedor */
-  height: 700px; /* Mantén la altura fija */
-  max-width: 100%; /* No debe exceder el contenedor */
+  width: 100%;
+  height: 700px;
+  max-width: 100%;
 }
+/*Fin CSS carousel.html*/
 
+/*CSS del contenedor hijos*/
 .container-hijos {
   padding: 60px 5%;
 }
@@ -643,3 +699,68 @@ footer .bi:hover {
 .container-hijos h1 {
   text-align: left;
 }
+/*Fin CSS del contenedor hijos*/
+
+/*CSS de index.php (Calendario)*/
+.body-calendar {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  background-attachment: fixed;
+}
+
+.container-calendar {
+  margin-top: 7rem;
+  background: linear-gradient(to right, #2a52be, #6a0dad);
+  width: 900px !important;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.fc-button {
+  background: linear-gradient(135deg, #fa85d9, #72a1f1) !important;
+  border: none !important;
+}
+
+#fc-dom-1 {
+  font-weight: bold;
+}
+
+.fc-col-header-cell-cushion {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.fc-daygrid-day-number {
+  color: white !important;
+  font-weight: bold !important;
+}
+/*Fin CSS de index.php (Calendario)*/
+
+/*CSS banner lateral*/
+.blog-banner {
+    width: 100%;
+    max-width: 300px;
+    height: 80vh;
+    background: linear-gradient(135deg, #ffe6f0, #e0f7fa);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.blog-banner .btn-pink {
+    background-color: #ff66b2;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.blog-banner .btn-pink:hover {
+    background-color: #e05599;
+    transform: scale(1.02);
+}
+
+.col-lg-8 {
+  background: transparent;
+}
+/*Fin CSS banner lateral*/

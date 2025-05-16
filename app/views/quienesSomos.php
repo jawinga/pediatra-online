@@ -39,7 +39,7 @@
             </p>
         </div>
         <div class="info-image">
-            <img src="./img/quienesSomos-img/equipo-medico.png" alt="Equipo médico">
+            <img src="./img/quienesSomos-img/nuestro-equipo.png" alt="Equipo médico">
         </div>
     </section>
 
@@ -61,7 +61,7 @@
         <p>Somos un equipo multidisciplinar formado por desarrolladores web apasionados por la tecnología y profesionales del sector sanitario, especialmente en el ámbito de la pediatría y la vacunación. Nuestra misión es facilitar a las familias el seguimiento de las vacunas y citas médicas de sus hijos, contribuyendo así al bienestar infantil.</p>
     </div>
     <div class="info-image">
-        <img src="./img/quienesSomos-img/madre-vacunando(cambiar).webp" alt="Equipo PediVax">
+        <img src="./img/quienesSomos-img/equipo-medico.png" alt="Equipo PediVax">
     </div>
 </section>
 
@@ -71,7 +71,7 @@
         <p class="text-white">PediVax surge de una necesidad real: muchos padres y madres olvidaban citas importantes o no sabían cuándo tocaba cada vacuna. Nuestro equipo decidió crear una herramienta digital clara, intuitiva y confiable que ayude a llevar un control eficaz del calendario de vacunación pediátrica.</p>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Nacimiento+del+proyecto" alt="Origen de la idea">
+        <img src="./img/quienesSomos-img/vacunacion-infantil.png" alt="Origen de la idea">
     </div>
 </section>
 
@@ -91,18 +91,20 @@
         <p class="text-white">Todos los datos personales y médicos de los usuarios están protegidos conforme al RGPD. Solo se utilizan con fines médicos dentro de la plataforma. Creemos firmemente en que la tecnología debe respetar siempre la confidencialidad familiar.</p>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Privacidad" alt="Privacidad de datos">
+        <img src="./img/quienesSomos-img/privacidad.png" alt="Privacidad de datos">
     </div>
 </section>
 
 <section class="info">
     <div class="info-content">
-        <h2>📊Nuestro impacto</h2>
-        <ul>
-            <li>✔ Más de 100 familias ya usan PediVax</li>
-            <li>✔ 1.200 eventos médicos gestionados</li>
-            <li>✔ 95% de usuarios satisfechos en encuestas</li>
-        </ul>
+        <div class="justify-content-center">
+            <h2>📊Nuestro impacto</h2>
+            <ul>
+                <li>✔ Más de 100 familias ya usan PediVax</li>
+                <li>✔ 1.200 eventos médicos gestionados</li>
+                <li>✔ 95% de usuarios satisfechos en encuestas</li>
+            </ul>
+        </div>
     </div>
     <div class="info-image">
         <img src="https://via.placeholder.com/400x300?text=Impacto" alt="Impacto de la plataforma">
