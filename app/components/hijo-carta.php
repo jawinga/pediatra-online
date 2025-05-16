@@ -2,7 +2,7 @@
 // El archivo hijo-carta.php asume que $hijo y $proximaCita están definidos
 ?>
 
-<div class="card-hijo">
+<a href="perfilHijo.php?id=<?= htmlspecialchars($hijo['id']) ?>" class="card-hijo">
   <div class="card-hijo-izq">
     <img src="../views/img/avatars/<?= htmlspecialchars($hijo['avatar'] ?? 'default-avatar.png') ?>"
          alt="Avatar de <?= htmlspecialchars($hijo['nombre']) ?>"
@@ -100,4 +100,4 @@
     }
     ?>
   </div>
-</div>
+</a>

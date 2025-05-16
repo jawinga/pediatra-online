@@ -23,8 +23,13 @@ class Cita {
     $stmt = $conn->prepare("SELECT fecha, tipo_vacuna, centro_medico FROM citas WHERE hijo_id = ? AND fecha >= NOW() ORDER BY fecha ASC LIMIT 1");
     $stmt->execute([$hijo_id]);
     return $stmt->fetch(PDO::FETCH_ASSOC);
-}
+    }
     
+     public static function obtenerPorHijo($conn, $hijo_id) {
+        $stmt = $conn->prepare("SELECT fecha, tipo_vacuna, centro_medico FROM citas WHERE hijo_id = ? ORDER BY fecha ASC");
+        $stmt->execute([$hijo_id]);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 
 }
 ?>

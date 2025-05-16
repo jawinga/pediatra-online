@@ -18,8 +18,6 @@ main {
   flex: 1;
 }
 
-<<<<<<< Updated upstream
-=======
 /*Comienza el contenido de la navbar*/
 
 .navbar {
@@ -439,7 +437,7 @@ select:focus {
   outline: none;
 }
 
->>>>>>>Stashed changes h1,
+h1,
 h2,
 h3,
 h4 {

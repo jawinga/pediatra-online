@@ -1,6 +1,11 @@
 <?php
     session_start();
     $isLoggedIn = isset($_SESSION['usuario_id']);
+
+    require_once __DIR__ . '/../../config/database.php';
+    require_once __DIR__ . '/../models/Hijo.php';
+    require_once __DIR__ . '/../models/Cita.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -28,15 +33,14 @@
 
     <!-- Validación de sesión -->
     <?php
-        require_once __DIR__ . '/../../config/database.php';
-        require_once __DIR__ . '/../models/Hijo.php';
+    
 
-        if (!isset($_SESSION['usuario_id'])) {
+        /*if (!isset($_SESSION['usuario_id'])) {
              header("Location: login.php");
             exit();
         }
 
-    $hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
+    $hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);*/
     ?>
 
     <!-- Sección del banner principal -->
@@ -64,20 +68,10 @@
     </section>
 
 
-    <!-- Sección del banner para añadir hijos -->
-    <section class="container-hijos gap-4">
-        <?php if (empty($hijos)): ?>
-         <?php include "../components/sin-hijos-banner/sin-hijos-banner.php" ?>
-        <?php else: ?>
-            <h1>Tus Hijos</h1>
-            <div class="lista-hijos-inicio d-flex align-items-center gap-4">
 
-    
 
    <?php
-require_once __DIR__ . '/../../config/database.php';
-require_once __DIR__ . '/../models/Hijo.php';
-require_once __DIR__ . '/../models/Cita.php';
+
 
 $hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
 ?>

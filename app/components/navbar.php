@@ -24,7 +24,7 @@ $isLoggedIn = isset($_SESSION['usuario_id']);
     <?php if ($isLoggedIn): ?>
         <div class="auth-buttons">
             <a href="/pediatra-online/app/views/perfil.php" class="btn login btn-primary">Ir al perfil</a>
-            <a href="/pediatra-online/app/views/logout.php" class="btn register btn-secondary">Cerrar Sesión</a>
+            <a href="../controllers/logout.php" class="btn register btn-secondary">Cerrar Sesión</a>
         </div>
     <?php else: ?>        
         <div class="auth-buttons">
@@ -35,3 +35,4 @@ $isLoggedIn = isset($_SESSION['usuario_id']);
 
     <div class="menu-toggle">&#9776;</div> <!-- Icono tipo hamburguesa -->
 </nav>
+

@@ -14,6 +14,12 @@ class Hijo {
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+     public static function obtenerPorId($conn, $hijo_id, $usuario_id) {
+        $stmt = $conn->prepare("SELECT * FROM hijos WHERE id = ? AND usuario_id = ?");
+        $stmt->execute([$hijo_id, $usuario_id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
   
 
 }
