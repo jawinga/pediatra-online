@@ -17,7 +17,7 @@
 <header>  
   <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
     <div class="container">
-      <div class="logo"><img src="/pediatra-online/app/views/img/logoPedivax.png" alt="PediVax"></div>
+      <div class="logo"><img src="/app/views/calendario/img/logoPedivax.png" alt="PediVax"></div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         &#9776;
       </button>
@@ -35,31 +35,42 @@
 </header>
 
 <section class="hero text-center py-5 bg-light">
-  <h1>Calendario de Vacunación</h1>
- 
+  <div class="container">
+    <i class="fas fa-syringe fa-3x text-primary mb-4"></i>
+    <h1 class="display-4 fw-bold">Calendario de Vacunación</h1>
+    <p class="lead mb-4">
+  Consulta las fechas y tipos de vacunas recomendadas para cada etapa de la vida.
+</p>
+
+    <a href="https://vacunasaep.org/profesionales/calendario-de-vacunaciones-e-inmunizaciones-aep-2025" class="btn btn-primary btn-lg">Ver Calendario</a>
+  </div>
 </section>
-  <!-- Contenido -->
-    <!-- Botones de edad y calendario -->
-    <div class="container mt-5">
-    <h2 class="mb-4">📌 Explora las vacunas según la edad</h2>
-    <div class="row justify-content-center">
-      <div class="col-auto mb-2">
-        <a href="vacunas/index.php?edad=2" class="btn btn-outline-primary btn-lg">2 meses</a>
-      </div>
-      <div class="col-auto mb-2">
-        <a href="vacunas/index.php?edad=4" class="btn btn-outline-success btn-lg">4 meses</a>
-      </div>
-      <div class="col-auto mb-2">
-        <a href="vacunas/index.php?edad=6" class="btn btn-outline-info btn-lg">6 meses</a>
-      </div>
-      <div class="col-auto mb-2">
-        <a href="vacunas/index.php?edad=11" class="btn btn-outline-warning btn-lg">11 meses</a>
-      </div>
-      <div class="col-auto mb-2">
-        <a href="vacunas/index.php?edad=12" class="btn btn-outline-danger btn-lg">12 meses</a>
-      </div>
+
+<!-- Botones de edad y calendario -->
+<div class="container mt-5">
+  <h2 class="mb-4">📌 Explora las vacunas según la edad</h2>
+  <div class="row justify-content-center">
+    <div class="col-auto mb-2">
+      <a href="/app/views/calendario/vacunas/vacunas.php?edad=2" class="btn btn-outline-primary btn-lg">2 meses</a>
+    </div>
+    <div class="col-auto mb-2">
+      <a href="/app/views/calendario/vacunas/vacunas.php?edad=4" class="btn btn-outline-success btn-lg">4 meses</a>
+    </div>
+    <div class="col-auto mb-2">
+      <a href="/app/views/calendario/vacunas/vacunas.php?edad=6" class="btn btn-outline-info btn-lg">6 meses</a>
+    </div>
+    <div class="col-auto mb-2">
+      <a href="/app/views/calendario/vacunas/vacunas.php?edad=9" class="btn btn-outline-warning btn-lg">9 meses</a>
+    </div>
+    <div class="col-auto mb-2">
+      <a href="/app/views/calendario/vacunas/vacunas.php?edad=11" class="btn btn-outline-warning btn-lg">11 meses</a>
+    </div>
+    <div class="col-auto mb-2">
+      <a href="/app/views/calendario/vacunas/vacunas.php?edad=12" class="btn btn-outline-danger btn-lg">12 meses</a>
     </div>
   </div>
+</div>
+
 
   <!-- Calendario visual decorativo -->
   <div class="container mt-5">

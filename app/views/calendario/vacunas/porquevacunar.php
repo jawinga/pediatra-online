@@ -12,13 +12,39 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<header><?php include(__DIR__ . '/../components/navbar.php'); ?></header>
+<header>  
+  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <div class="container">
+      <div class="logo"><img src="/app/views/calendario/img/logoPedivax.png" alt="PediVax"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        &#9776;
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav-links navbar-nav ms-auto">
+       <li class="nav-item"><a class="nav-link active" href="/app/views/calendario/calendario.php">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/vacunas.php">Vacunas</a></li>
+          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/porquevacunar.php">Por qué vacunar</a></li>
+          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/preguntas.php">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="/app/views/inicio.php">Inicio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 
 <section class="hero text-center py-5 bg-light">
-  <h1>Vacunas</h1>
+  <div class="container">
+    <i class="fas fa-syringe fa-3x text-primary mb-4"></i>
+    <h1 class="display-4 fw-bold">¿Por qué vacunar?</h1>
+    <p class="lead mb-4">
+ Vacunar es un acto de amor y protección. Las vacunas salvan vidas, previenen enfermedades graves y protegen a toda la comunidad.
+</p>
 
+    <a href="https://www.sanidad.gob.es/campannas/campanas16/vacunacionBeneficios.htm?utm_source=chatgpt.com" class="btn btn-primary btn-lg">Descubre los beneficios</a>
+  </div>
 </section>
+
 
   <!-- Sección Explicativa sobre la Importancia de las Vacunas -->
   <section class="why-vaccinate py-5" data-aos="fade-up">
