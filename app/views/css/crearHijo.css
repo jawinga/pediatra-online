@@ -1,0 +1,135 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background: #f0f2f5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka", sans-serif;
+}
+
+.titulo-crear-hijo {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #f72585, #b5179e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.avatar-img {
+  height: auto;
+  width: 100px;
+}
+
+.avatar-radio {
+  display: none;
+}
+
+label[for^="avatar-"] {
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: border-color 0.3s ease;
+}
+
+.avatar-radio:checked + label {
+  border-color: #f72585;
+}
+
+.avatar-label {
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 5px;
+  transition: 0.2s ease;
+}
+
+.avatar-label.selected {
+  border-color: #f72585;
+  background-color: #ffe3f3;
+}
+
+/*CARTA HIJO PRUEBA*/
+
+.card-hijo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #ffe3ec,
+    #d0bfff
+  ); /* pastel pink to lavender */
+  border-radius: 12px;
+  width: 400px;
+  height: auto;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(180, 180, 180, 0.15);
+  padding: 1.5rem;
+}
+
+/* On hover: gentle purple-pink gradient */
+.card-hijo:hover {
+  background: linear-gradient(135deg, #e0c3fc, #fcbad3);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(160, 160, 160, 0.25);
+}
+
+.card-avatar {
+  height: auto;
+  width: 200px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-info h3 {
+  background: linear-gradient(135deg, #f72585, #b5179e);
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.card-info button {
+  font-family: "Fredoka", sans-serif;
+  padding: 0.7rem 1.3rem;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(170, 170, 170, 0.2);
+}
+
+.card-info button:hover {
+  background: linear-gradient(135deg, #e0c3fc, #fcbad3);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(160, 160, 160, 0.3);
+  color: #222;
+}

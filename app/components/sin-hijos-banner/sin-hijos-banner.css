@@ -1,0 +1,75 @@
+.sin-hijos-back {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 200px;
+  border-radius: 16px;
+}
+
+.sin-hijos-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../views/img/login-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  color: white !important;
+}
+
+.sin-hijos-text h2,
+h4 {
+  color: white !important;
+}
+
+.sin-hijos-imagen {
+  background-image: url(../sin-hijos-banner/sin-hijos-img.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.sin-hijos-imagen a {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(135deg, #f72585, #b5179e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease;
+}
+
+.sin-hijos-imagen a:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(247, 37, 133, 0.4);
+  background: linear-gradient(135deg, #ff4d94, #c41ab1);
+}
+
+.sin-hijos-imagen a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.4s ease;
+}

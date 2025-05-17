@@ -1,0 +1,47 @@
+.perfil-container {
+  width: 800px;
+  background: linear-gradient(135deg, #ffe3ec, #d0bfff);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(180, 180, 180, 0.15);
+  transform: translateY(100px);
+}
+
+.perfil-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.perfil-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.perfil-icon {
+  font-size: 100px;
+  color: #6c757d;
+  flex-shrink: 0;
+}
+
+.perfil-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-editar-perfil {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 6px !important;
+}
+
+.alert {
+  margin-top: 2rem;
+}

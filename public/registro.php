@@ -23,5 +23,6 @@
     </form>
 
     <p>¿Ya tienes cuenta? <a href="login.php">Inicia sesión</a></p>
+    <script src="../app/views/js/recursos.js"></script>
 </body>
 </html>
