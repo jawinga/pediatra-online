@@ -124,7 +124,7 @@ $vacunas = [
   ],
   12 => [
     'descripcion' => 'Se administran vacunas importantes para proteger frente al sarampión, rubeola, parotiditis y meningitis.',
-    'video'       => 'https://www.youtube.com/embed/TJ0IIgsLHE8',
+    'video'       => 'https://www.youtube.com/embed/i4a7g-1wgUs',
     'vacunas'     => [
       [
         'titulo'      => '🧪 Triple Vírica (SRP)',

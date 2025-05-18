@@ -85,24 +85,50 @@
   </section>
 
   <!-- Carrusel de Videos -->
-  <section class="video-carousel py-5" data-aos="fade-up">
+<!-- Carrusel de Videos Educativos -->
+<section class="video-carousel py-5" data-aos="fade-up">
   <div class="container">
-    <h3 class="text-center mb-4">Videos Educativos sobre Vacunas</h3>
+    <h3 class="text-center mb-4 text-purple fw-bold">
+      <i class="bi bi-play-circle-fill me-2"></i> Videos Educativos sobre Vacunas
+    </h3>
+
     <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
+      <div class="carousel-inner rounded shadow">
+
+        <!-- Video 1 -->
         <div class="carousel-item active">
-          <!-- Corregir el enlace del iframe -->
-          <iframe class="d-block w-100" height="315" src="https://www.youtube.com/embed/KZn6ATGzLyo" title="Video 1" allowfullscreen></iframe>
+          <iframe class="d-block w-100 rounded" height="400" src="https://www.youtube.com/embed/KZn6ATGzLyo" title="Vacunas: Lo que debes saber" allowfullscreen></iframe>
         </div>
+
+        <!-- Video 2 -->
         <div class="carousel-item">
-          <!-- Corregir el enlace del iframe -->
-          <iframe class="d-block w-100" height="315" src="https://www.youtube.com/embed/kXJvOiP_aJM" title="Video 2" allowfullscreen></iframe>
+          <iframe class="d-block w-100 rounded" height="400" src="https://www.youtube.com/embed/kXJvOiP_aJM" title="¿Por qué vacunar?" allowfullscreen></iframe>
         </div>
+
+        <!-- Video 3 -->
         <div class="carousel-item">
-          <!-- Corregir el enlace del iframe -->
-          <iframe class="d-block w-100" height="315" src="https://www.youtube.com/embed/i4a7g-1wgUs" title="Video 3" allowfullscreen></iframe>
+          <iframe class="d-block w-100 rounded" height="400" src="https://www.youtube.com/embed/i4a7g-1wgUs" title="Vacunas explicadas" allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="carousel-item">
+          <iframe class="d-block w-100 rounded" height="400" src="https://www.youtube.com/embed/TJ0IIgsLHE8" title="Vacunación infantil" allowfullscreen></iframe>
         </div>
       </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+
       <!-- Botones de control del carrusel -->
       <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
