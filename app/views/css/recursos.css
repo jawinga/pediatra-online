@@ -143,14 +143,13 @@ body {
   border-radius: 8px;
   transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1),
     box-shadow 0.8s cubic-bezier(0.25, 1, 0.5, 1), background 0.4s ease;
-  cursor: pointer;
 }
 
-.blog-principal:hover {
+/*.blog-principal:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 6px 16px rgba(247, 37, 133, 0.4);
   background: linear-gradient(135deg, #ff4d94, #c41ab1);
-}
+}*/
 
 .blog-izq {
   grid-column: 1 / 2;
@@ -270,6 +269,8 @@ body {
 
 .blog-normal__titulo {
   font-family: "Fredoka", sans-serif;
+  margin-top: 2rem !important;
+  text-align: start;
   text-transform: uppercase;
   font-size: 2rem;
   text-wrap: break-word;
