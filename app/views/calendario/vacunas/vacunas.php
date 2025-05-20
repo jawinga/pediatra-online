@@ -1,3 +1,4 @@
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/config/config.php'); ?>
 <?php
 // 1. Recogemos la edad por GET (por defecto, 2 meses)
 $edad = isset($_GET['edad']) ? intval($_GET['edad']) : 2;
@@ -167,31 +168,13 @@ $colores = [
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="../../css/calendario.css">
+
 </head>
 <body>
 
   <!-- HEADER / NAVBAR -->
-  <header>  
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="../../inicio.php">
-          <img src="/app/views/calendario/img/logoPedivax.png" alt="PediVax" style="height: 50px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="nav-links navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="/app/views/calendario/calendario.php">Calendario</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/vacunas.php">Vacunas</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/porquevacunar.php">Por qué vacunar</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/preguntas.php">Preguntas</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/inicio.php">Inicio</a></li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <!-- Navbar -->
+    <header><?php include($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/app/components/navbar.php'); ?></header>
 
   <!-- HERO -->
 <section class="hero text-center py-5 bg-light">
@@ -274,10 +257,11 @@ $colores = [
     <?php endif; ?>
   </div>
 
-  <!-- FOOTER -->
-  <?php include('../../../components/footer.php'); ?>
+ 
 
  
   <script src="../../js/pages.js"></script>
+   <!-- FOOTER -->
+  <?php include($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/app/components/footer.php'); ?>
 </body>
 </html>

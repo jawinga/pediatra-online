@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/detalleArticulo.css">
 	<link rel="stylesheet" href="../../app/components/components.css">
+  	<link rel="stylesheet" href="../../app/views/css/pageStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -17,23 +18,8 @@
 
 <body>
 
-<header>
-        <nav class="navbar" id="navbar">
-            <div class="logo"><img src="linkAlLogo" alt="PediVax"></div>
-            <ul class="nav-links">
-                <li><a href="./calendario/calendario.php">Calendario</a></li>
-                <li><a href="./quienesSomos.php">Quiénes somos</a></li>
-                <li><a href="./recursos.php">Recursos</a></li>
-                <li><a href="./contacto.php">Contacto</a></li>
-            </ul>
-            
-            <div class="auth-buttons">
-                <button class="btn login"><strong>Iniciar Sesión</strong></button>
-                <button class="btn register"><strong>Crear Cuenta</strong></button>
-            </div>
-            <div class="menu-toggle">&#9776;</div> <!-- Icono tipo hamburguesa -->
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <header><?php include(__DIR__ . '/../components/navbar.php'); ?></header>
 
   <main id="detalle-articulo">
 

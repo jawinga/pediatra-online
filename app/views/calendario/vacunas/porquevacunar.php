@@ -1,3 +1,6 @@
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/config/config.php'); ?>
+
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,25 +15,8 @@
 </head>
 <body>
 
-<header>  
-  <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-    <div class="container">
-      <div class="logo"><img src="/app/views/calendario/img/logoPedivax.png" alt="PediVax"></div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        &#9776;
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav-links navbar-nav ms-auto">
-       <li class="nav-item"><a class="nav-link active" href="/app/views/calendario/calendario.php">Calendario</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/vacunas.php">Vacunas</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/porquevacunar.php">Por qué vacunar</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/calendario/vacunas/preguntas.php">Preguntas</a></li>
-          <li class="nav-item"><a class="nav-link" href="/app/views/inicio.php">Inicio</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
+    <!-- Navbar -->
+    <header><?php include($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/app/components/navbar.php'); ?></header>
 
 
 <section class="hero text-center py-5 bg-light">
@@ -157,7 +143,6 @@
     <script src="../../js/pages.js"></script>
 
     <?php include('../../../components/footer.php'); ?>
-
  
 </body>
 </html>

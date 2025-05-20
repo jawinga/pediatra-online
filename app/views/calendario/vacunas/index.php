@@ -1,3 +1,5 @@
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/config/config.php'); ?>
+
 <?php
 $edad = isset($_GET['edad']) ? intval($_GET['edad']) : 2;
 

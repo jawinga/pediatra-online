@@ -29,7 +29,7 @@
             <p>¡Conoce el equipo detrás de PediVax y toda la historia que hay detrás de nuestra humilde empresa!</p>
         </div>
         <div class="hero-image">
-            <img src="./img/inicio-img/header inicio.png" alt="Madre con su hijo">
+            <img src="./img/quienesSomos-img/fundadores-pedivax.png" alt="Fundadores PediVax">
         </div>
     </section>
     
