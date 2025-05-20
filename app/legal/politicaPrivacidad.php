@@ -1,3 +1,5 @@
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/config/config.php'); ?>
+
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
