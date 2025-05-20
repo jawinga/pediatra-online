@@ -70,11 +70,13 @@
 
 
 
-   <?php
+<?php
 
 
-$hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
-?>
+$hijos = [];
+if ($isLoggedIn) {
+    $hijos = Hijo::obtenerPorUsuario($conn, $_SESSION["usuario_id"]);
+}?>
 
 <section class="container-hijos gap-4">
     <?php if (empty($hijos)): ?>
