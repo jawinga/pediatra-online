@@ -131,7 +131,6 @@
     La autoestima de un niño se construye día a día a través de palabras, gestos y actitudes. Reforzar su confianza implica valorar sus esfuerzos, enseñarle a superar desafíos y apoyarlo en sus fracasos sin juzgarlo. Un entorno familiar positivo y la comunicación afectiva son claves para que desarrolle una imagen sana de sí mismo.
 </p>
 
-        <button class="blog-boton">Leer más</button>
     </div> 
 </div>
 
