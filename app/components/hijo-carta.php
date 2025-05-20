@@ -46,7 +46,7 @@
       </p>
     <?php endif; ?>
 
-    <button class="btn login btn-primary button-card-hijo">Editar</button>
+    <button class="btn login btn-primary button-card-hijo">Ver</button>
   </div>
 
   <div class="card-recomendacion">
