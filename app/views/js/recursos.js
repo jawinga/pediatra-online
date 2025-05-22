@@ -68,164 +68,65 @@ viewBox="0 0 512 512"  xml:space="preserve">
 
 
 </div> */
+let detallesData = [];
 
-let detallesData;
+// Función para pintar los artículos en pantalla
+function pintarArticulos(lista) {
+  // Elimina artículos previos
+  blogGrid.querySelectorAll(".blog-normal").forEach((el) => el.remove());
 
-fetch("../../articulos.json")
-  .then((res) => {
-    if (!res) {
-      throw new Error("Ha habido un error a la hora de conectar con el JSON");
-    }
-    return res.json();
-  })
-  .then((data) => {
-    console.log("Los articulos se han cargado:");
-
-    data.forEach((articulo) => {
-      console.log("---------------------");
-      console.log(articulo.id);
-      console.log(articulo.titulo);
-      console.log(articulo.imgURL);
-      console.log(articulo.subtitulo);
-      console.log(articulo.categoria);
-      console.log(articulo.texto);
-
-      const card = fillArticle({
-        id: articulo.id,
-        titulo: articulo.titulo,
-        subtitulo: articulo.subtitulo,
-        texto: articulo.texto,
-        imgURL: articulo.imgURL,
-        categoria: articulo.categoria,
-      });
-
-      blogGrid.appendChild(card);
-    });
-
-    detallesData = data;
-  })
-
-  .catch((error) => {
-    console.error("❌ Ha habido un error al cargar los artículos:", error);
-  });
-
-const filtrar1 = document.querySelector("#recursos-filtrar-1");
-const filtrar2 = document.querySelector("#recursos-filtrar-2");
-const filtrar3 = document.querySelector("#recursos-filtrar-3");
-const filtrar4 = document.querySelector("#recursos-filtrar-4");
-
-filtrar1.addEventListener("click", (e) => {
-  filtrar1.style.color = "#7209b7";
-  console.log(e);
-
-  filtrar2.style.color = "";
-  filtrar3.style.color = "";
-  filtrar4.style.color = "";
-
-  fetch("../../articulos.json")
-    .then((res) => {
-      if (!res) {
-        throw new Error("Ha habido un error a la hora de conectar con el JSON");
-      }
-      return res.json();
-    })
-    .then((data) => {
-      console.log("Los articulos se han cargado:");
-
-      data.forEach((articulo) => {
-        console.log("---------------------");
-        console.log(articulo.id);
-        console.log(articulo.titulo);
-        console.log(articulo.imgURL);
-        console.log(articulo.subtitulo);
-        console.log(articulo.categoria);
-        console.log(articulo.texto);
-
-        const card = fillArticle({
-          titulo: articulo.titulo,
-          subtitulo: articulo.subtitulo,
-          texto: articulo.texto,
-          imgURL: articulo.imgURL,
-          categoria: articulo.categoria,
-        });
-
-        blogGrid.appendChild(card);
-      });
-
-      detallesData = data;
-    })
-
-    .catch((error) => {
-      console.error("❌ Ha habido un error al cargar los artículos:", error);
-    });
-});
-
-function filtrarArticulos(
-  filt,
-  filt1 = filtrar1,
-  filt2 = filtrar2,
-  filt3 = filtrar3,
-  filt4 = filtrar4,
-  categoria
-) {
-  [filt1, filt2, filt3, filt4].forEach((btn) => {
-    btn.style.color = btn === filt ? "#7209b7" : "";
-  });
-
-  const artFiltr = detallesData.filter((articulo) => {
-    const art = articulo.categoria === `${categoria}`;
-    console.log(`Filtrando articulos... a ${categoria}`);
-    console.log(art);
-    return art;
-  });
-
-  const blogNormal = blogGrid.querySelectorAll(".blog-normal");
-
-  blogNormal.forEach((blog) => {
-    blog.remove();
-  });
-
-  artFiltr.forEach((art) => {
-    console.log(art);
+  // Añade nuevos
+  lista.forEach((articulo) => {
     const card = fillArticle({
-      titulo: art.titulo,
-      subtitulo: art.subtitulo,
-      texto: art.texto,
-      imgURL: art.imgURL,
-      categoria: art.categoria,
+      id: articulo.id,
+      titulo: articulo.titulo,
+      subtitulo: articulo.subtitulo,
+      texto: articulo.texto,
+      imgURL: articulo.imgURL,
+      categoria: articulo.categoria,
     });
+
     blogGrid.appendChild(card);
   });
 }
 
-filtrar2.addEventListener("click", (e) => {
-  filtrarArticulos(
-    filtrar2,
-    filtrar1,
-    filtrar2,
-    filtrar3,
-    filtrar4,
-    "educacion"
-  );
-});
+// Resalta el botón seleccionado
+function resaltarBoton(activo) {
+  document.querySelectorAll(".recursos-filtrar > div").forEach((btn) => {
+    btn.style.color = btn === activo ? "#7209b7" : "";
+  });
+}
 
-filtrar3.addEventListener("click", (e) => {
-  filtrarArticulos(
-    filtrar3,
-    filtrar1,
-    filtrar2,
-    filtrar3,
-    filtrar4,
-    "nutricion"
-  );
-});
-filtrar4.addEventListener("click", (e) => {
-  filtrarArticulos(
-    filtrar4,
-    filtrar1,
-    filtrar2,
-    filtrar3,
-    filtrar4,
-    "nutricion"
-  );
+// Obtener artículos una sola vez
+fetch("../../articulos.json")
+  .then((res) => {
+    if (!res.ok) throw new Error("Error al conectar con el JSON");
+    return res.json();
+  })
+  .then((data) => {
+    detallesData = data;
+    console.log("✅ Artículos cargados correctamente.");
+    pintarArticulos(detallesData); // Mostrar todos al inicio
+  })
+  .catch((error) => {
+    console.error("❌ Ha habido un error al cargar los artículos:", error);
+  });
+
+// Asociar todos los botones de filtro
+// ... tu código de fillArticle, pintarArticulos, resaltarBoton, fetch, etc.
+
+// Asociar todos los botones de filtro usando data-categoria
+document.querySelectorAll(".recursos-filtrar > div").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    resaltarBoton(btn);
+
+    const slug = btn.dataset.categoria; // p.ej. "nutricion"
+
+    if (slug === "todos") {
+      pintarArticulos(detallesData);
+    } else {
+      const filtrados = detallesData.filter((art) => art.categoria === slug);
+      pintarArticulos(filtrados);
+    }
+  });
 });

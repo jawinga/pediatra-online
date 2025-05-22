@@ -25,7 +25,14 @@ if (!isset($_SESSION['usuario_id'])) {
 </head>
 <body class="p-5">
 
+     <a href="../views/inicio.php">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+        <polygon fill="#34495e" points="12.718 4.707 11.305 3.292 2.585 12 11.305 20.707 12.718 19.292 6.417 13 20 13 20 11 6.416 11 12.718 4.707"/>
+        </svg>
+        </a>
+
     <div class="container">
+
         <h1 class="titulo-crear-hijo">Registrar hijo o hija</h1>
 
         <?php if (isset($_SESSION['error'])): ?>
@@ -69,18 +76,11 @@ if (!isset($_SESSION['usuario_id'])) {
             </div>
 
 
-            <button type="submit" class="btn btn-success">Guardar</button>
-            <a href="inicio.php" class="btn btn-secondary">Volver</a>
+            <button type="submit" class="btn login btn-primary">Guardar</button>
+            <a href="inicio.php" class="btn register btn-secondary">Volver</a>
         </form>
     </div>
 
-
-    <?php
-
-       include('../components/sin-hijos-banner/sin-hijos-banner.php');
-
-
-        ?>
 
     <script src="../views/js/crearHijo.js"></script>
 </body>

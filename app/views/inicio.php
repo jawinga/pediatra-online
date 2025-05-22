@@ -81,29 +81,30 @@ if ($isLoggedIn) {
 }?>
 
 <section class="container-hijos gap-4">
-    <?php if (empty($hijos)): ?>
+    <?php if ($isLoggedIn && empty($hijos)): ?>
         <?php include "../components/sin-hijos-banner/sin-hijos-banner.php" ?>
     <?php else: ?>
-        <h1>Tus Hijos</h1>
+        <?php if ($isLoggedIn): ?>
+            <h1>Tus Hijos</h1>
+        <?php endif; ?>
         <div class="lista-hijos-inicio gap-4">
-
-
+            <?php if ($isLoggedIn): ?>
             <?php foreach ($hijos as $hijo): ?>
                 <?php 
-                    // Obtener la próxima cita para este hijo
-                    $proximaCita = Cita::obtenerProximaPorHijo($conn, $hijo['id']);
+                // Obtener la próxima cita para este hijo
+                $proximaCita = Cita::obtenerProximaPorHijo($conn, $hijo['id']);
                 ?>
                 <?php 
-                    // Incluye la carta pasando ambas variables
-                    // Importante: en hijo-carta.php usas $hijo y $proximaCita
-                    include __DIR__ . '/../components/hijo-carta.php'; 
+                // Incluye la carta pasando ambas variables
+                // Importante: en hijo-carta.php usas $hijo y $proximaCita
+                include __DIR__ . '/../components/hijo-carta.php'; 
                 ?>
             <?php endforeach; ?>
 
             <a href="hijoFormulario.php" class="btn btn-success btn-lg" style="height: fit-content;">
                 <i class="bi bi-person-plus-fill"></i>
             </a>
-
+            <?php endif; ?>
         </div>
     <?php endif; ?>
 </section>

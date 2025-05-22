@@ -30,17 +30,24 @@
 
 
 
-<div class="blog-grid" id="blog-grid">
+<div class="blog-grid my-3" id="blog-grid">
 
 <div class="blog-navigation">
 
 	<h3 class="blog-h3">Blog</h3>
 	<div class="recursos-filtrar">
 
-		<div class="recrusos-filtrar-1" id="recursos-filtrar-1">Todos</div>
-		<div class="recrusos-filtrar-2" id="recursos-filtrar-2">Educación</div>
-		<div class="recrusos-filtrar-educacion" id="recursos-filtrar-3">Psicología</div>
-		<div class="recrusos-filtrar-educacion" id="recursos-filtrar-4">Nutrición</div>
+	<div class="recursos-filtrar">
+  <div id="recursos-filtrar-1" data-categoria="todos">Todos</div>
+  <div id="recursos-filtrar-2" data-categoria="educacion">Educación</div>
+  <div id="recursos-filtrar-3" data-categoria="psicologia">Psicología</div>
+  <div id="recursos-filtrar-4" data-categoria="nutricion">Nutrición</div>
+  <div id="recursos-filtrar-5" data-categoria="desarrollo">Desarrollo</div>
+  <div id="recursos-filtrar-6" data-categoria="parentalidad">Parentalidad</div>
+  <div id="recursos-filtrar-7" data-categoria="autonomia">Autonomía</div>
+</div>
+
+
 
 	</div>
 
