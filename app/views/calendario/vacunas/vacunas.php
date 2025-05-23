@@ -200,7 +200,7 @@ $colores = [
         <div class="col-md-8">
           <p class="lead"><?= $vacunas[$edad]['descripcion'] ?></p>
         </div>
-      
+    </div>
 
       <!-- BOTONES DE EDADES (antes de las tarjetas) -->
       <div class="text-center mb-4">
