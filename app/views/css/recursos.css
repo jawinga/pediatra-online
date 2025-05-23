@@ -193,6 +193,7 @@ body {
   text-transform: uppercase;
   font-size: 2rem;
   text-wrap: break-word;
+  color: rgb(11, 29, 41) !important;
 }
 
 .blog-boton {

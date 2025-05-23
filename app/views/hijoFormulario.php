@@ -11,7 +11,7 @@ if (!isset($_SESSION['usuario_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Registrar hijo o hija</title>
-    <link rel="stylesheet" href="../components/components.css"> <!-- opcional -->
+    <link rel="stylesheet" href="../components/components.css">
     <link rel="stylesheet" href="../views/css/crearHijo.css">
     <link rel="stylesheet" href="../views/css/pageStyle.css">
     <link rel="stylesheet" href="../components/sin-hijos-banner/sin-hijos-banner.css">

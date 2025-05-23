@@ -35,7 +35,7 @@
 <div class="blog-navigation">
 
 	<h3 class="blog-h3">Blog</h3>
-	<div class="recursos-filtrar">
+	<!-- <div class="recursos-filtrar">
 
 	<div class="recursos-filtrar">
   <div id="recursos-filtrar-1" data-categoria="todos">Todos</div>
@@ -49,7 +49,7 @@
 
 
 
-	</div>
+	</div> -->
 
 </div>
 
