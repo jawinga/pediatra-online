@@ -18,10 +18,12 @@
   <div class="registro-container">
     <div class="form-wrapper">
       <div class="form-header">
+        <a href="../views/inicio.php">
         <!-- Ícono similar al login -->
         <svg xmlns="http://www.w3.org/2000/svg" class="icono" viewBox="0 0 24 24" width="48" height="48">
           <polygon fill="#34495e" points="12.718 4.707 11.305 3.292 2.585 12 11.305 20.707 12.718 19.292 6.417 13 20 13 20 11 6.416 11 12.718 4.707"/>
         </svg>
+        </a>
         <h1 class="titulo-login">Registro</h1>
       </div>
       
