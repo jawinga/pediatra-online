@@ -215,6 +215,23 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+#guarda-hijo {
+  margin-right: 15px;
+  background-color: #50b4e6;
+  color: white;
+}
+
+#volver-inicio {
+  margin-right: 30px;
+  background-color: #6a0dad;
+  color: white;
+}
+
+#guardar-hijo:hover,
+#volver-inicio:hover {
+  transition: all 0.3s ease;
+}
+
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -459,7 +476,6 @@ a:hover {
 }
 /*Fin CSS inicio.php*/
 
-
 /*CSS de FAQ*/
 .qm-color {
   color: linear-gradient(to right, #e968c4, #3974da);
@@ -503,7 +519,6 @@ a:hover {
   padding-bottom: 12px;
 }
 /*Fin CSS de FAQ*/
-
 
 /*CSS apartado legal*/
 .legal-container {

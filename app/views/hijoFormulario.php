@@ -76,8 +76,8 @@ if (!isset($_SESSION['usuario_id'])) {
             </div>
 
 
-            <button type="submit" class="btn login btn-primary">Guardar</button>
-            <a href="inicio.php" class="btn register btn-secondary">Volver</a>
+            <button type="submit" class="btn login btn-primary" id="guardar-hijo">Guardar</button>
+            <a href="inicio.php" class="btn register btn-secondary" id="volver-inicio">Volver</a>
         </form>
     </div>
 
