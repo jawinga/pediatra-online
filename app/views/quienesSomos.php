@@ -29,7 +29,7 @@
             <p>¡Conoce el equipo detrás de PediVax y toda la historia que hay detrás de nuestra humilde empresa!</p>
         </div>
         <div class="hero-image">
-            <img src="./img/quienesSomos-img/fundadores-pedivax.png" alt="Fundadores PediVax">
+            <img src="./img/quienesSomos-img/fundadores-pedivax-nuevo.png" alt="Fundadores PediVax">
         </div>
     </section>
     
@@ -83,7 +83,7 @@
         <p>En PediVax creemos en la accesibilidad, la prevención médica, la privacidad de los datos y el acompañamiento familiar. Cada decisión de diseño y funcionalidad está pensada para hacer la vida más fácil a madres y padres, y más segura para sus hijos.</p>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Valores" alt="Valores PediVax">
+        <img src="./img/quienesSomos-img/nuestros-valores.png" alt="Valores PediVax">
     </div>
 </section>
 
@@ -93,23 +93,20 @@
         <p class="text-white">Todos los datos personales y médicos de los usuarios están protegidos conforme al RGPD. Solo se utilizan con fines médicos dentro de la plataforma. Creemos firmemente en que la tecnología debe respetar siempre la confidencialidad familiar.</p>
     </div>
     <div class="info-image">
-        <img src="./img/quienesSomos-img/privacidad.png" alt="Privacidad de datos">
+        <img src="./img/quienesSomos-img/privacidad-nuevo.png" alt="Privacidad de datos">
     </div>
 </section>
 
 <section class="info">
     <div class="info-content">
         <div class="justify-content-center">
-            <h2>📊Nuestro impacto</h2>
-            <ul>
-                <li>✔ Más de 100 familias ya usan PediVax</li>
-                <li>✔ 1.200 eventos médicos gestionados</li>
-                <li>✔ 95% de usuarios satisfechos en encuestas</li>
-            </ul>
+            <h2 class="mb-3">📊Nuestro impacto</h2>
+                <p class="text-center">✔ Más de 100 familias ya usan PediVax</p>
+                <p class="text-center">✔ 1.200 eventos médicos gestionados</p>
         </div>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Impacto" alt="Impacto de la plataforma">
+        <img src="./img/quienesSomos-img/nuestro-impacto.png" alt="Impacto de la plataforma">
     </div>
 </section>
 
