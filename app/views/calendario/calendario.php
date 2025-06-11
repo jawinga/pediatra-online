@@ -36,25 +36,23 @@
   <h2 class="mb-4">📌 Explora las vacunas según la edad</h2>
   <div class="row justify-content-center">
     <div class="col-auto mb-2">
-      <a href="/app/views/calendario/vacunas/vacunas.php?edad=2" class="btn btn-outline-primary btn-lg">2 meses</a>
+      <a href="<?php echo BASE_URL; ?>app/views/calendario/vacunas/vacunas.php?edad=2" class="btn btn-outline-primary btn-lg">2 meses</a>
     </div>
     <div class="col-auto mb-2">
-      <a href="/app/views/calendario/vacunas/vacunas.php?edad=4" class="btn btn-outline-success btn-lg">4 meses</a>
+      <a href="<?php echo BASE_URL; ?>app/views/calendario/vacunas/vacunas.php?edad=4" class="btn btn-outline-success btn-lg">4 meses</a>
     </div>
     <div class="col-auto mb-2">
-      <a href="/app/views/calendario/vacunas/vacunas.php?edad=6" class="btn btn-outline-info btn-lg">6 meses</a>
+      <a href="<?php echo BASE_URL; ?>app/views/calendario/vacunas/vacunas.php?edad=6" class="btn btn-outline-info btn-lg">6 meses</a>
     </div>
     <div class="col-auto mb-2">
-      <a href="/app/views/calendario/vacunas/vacunas.php?edad=9" class="btn btn-outline-warning btn-lg">9 meses</a>
+      <a href="<?php echo BASE_URL; ?>app/views/calendario/vacunas/vacunas.php?edad=9" class="btn btn-outline-warning btn-lg">9 meses</a>
     </div>
     <div class="col-auto mb-2">
-      <a href="/app/views/calendario/vacunas/vacunas.php?edad=11" class="btn btn-outline-warning btn-lg">11 meses</a>
+      <a href="<?php echo BASE_URL; ?>app/views/calendario/vacunas/vacunas.php?edad=11" class="btn btn-outline-warning btn-lg">11 meses</a>
     </div>
     <div class="col-auto mb-2">
-      <a href="/app/views/calendario/vacunas/vacunas.php?edad=12" class="btn btn-outline-danger btn-lg">12 meses</a>
+      <a href="<?php echo BASE_URL; ?>app/views/calendario/vacunas/vacunas.php?edad=12" class="btn btn-outline-danger btn-lg">12 meses</a>
     </div>
-  </div>
-</div>
 
 
   <!-- Calendario visual decorativo -->
