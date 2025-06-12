@@ -1,5 +1,5 @@
 <?php include_once($_SERVER['DOCUMENT_ROOT'] . '/pediatra-online/config/config.php'); ?>
-
+<!--Footer-->
 <footer class=" py-3">
 <div class="container-fluid px-5">
     <div class="row text-center text-md-start">

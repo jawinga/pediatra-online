@@ -31,7 +31,7 @@
   </div>
 </section>
 
-<!-- Botones de edad y calendario -->
+<!--  Botones de edad y calendario  -->
 <div class="container mt-5">
   <h2 class="mb-4">📌 Explora las vacunas según la edad</h2>
   <div class="row justify-content-center">

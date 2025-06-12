@@ -166,7 +166,7 @@
 
 
    
-      <!-- Enlaces a más información -->
+      <!--  Enlaces a más información  -->
       <div class="mt-4 text-center">
         <h4>Enlaces Útiles sobre Vacunas</h4>
         <p>¡Explora estos sitios para más información!</p>

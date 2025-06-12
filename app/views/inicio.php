@@ -198,7 +198,7 @@ if ($isLoggedIn) {
     </div>
 
 
-    <!-- Sección de FAQs -->
+    <!--  Sección de FAQs  -->
     <section class="faq my-5 mb-5 container-xl faq-container">
     <h2 class="text-center mb-4 text-pink fw-bold">
         <i class="bi bi-chat-dots-fill me-2"></i> Preguntas frecuentes
