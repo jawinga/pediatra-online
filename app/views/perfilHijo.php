@@ -25,7 +25,7 @@ if (isset($data['error'])) {
 $hijo = $data['hijo'];
 $citas = $data['citas'];
 ?>
-
+<!--Documento-->
 <!DOCTYPE html>
 <html lang="es">
 <head>

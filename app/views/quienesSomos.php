@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <!--Bootstraps icons-->
+    <!-- Bootstraps icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <title>Quiénes somos</title>
@@ -83,7 +83,7 @@
         <p>En PediVax creemos en la accesibilidad, la prevención médica, la privacidad de los datos y el acompañamiento familiar. Cada decisión de diseño y funcionalidad está pensada para hacer la vida más fácil a madres y padres, y más segura para sus hijos.</p>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Valores" alt="Valores PediVax">
+        <img src="./img/quienesSomos-img/nuestros-valores.png" alt="Valores PediVax">
     </div>
 </section>
 
@@ -93,23 +93,20 @@
         <p class="text-white">Todos los datos personales y médicos de los usuarios están protegidos conforme al RGPD. Solo se utilizan con fines médicos dentro de la plataforma. Creemos firmemente en que la tecnología debe respetar siempre la confidencialidad familiar.</p>
     </div>
     <div class="info-image">
-        <img src="./img/quienesSomos-img/privacidad.png" alt="Privacidad de datos">
+        <img src="./img/quienesSomos-img/privacidad-nuevo.png" alt="Privacidad de datos">
     </div>
 </section>
 
 <section class="info">
     <div class="info-content">
         <div class="justify-content-center">
-            <h2>📊Nuestro impacto</h2>
-            <ul>
-                <li>✔ Más de 100 familias ya usan PediVax</li>
-                <li>✔ 1.200 eventos médicos gestionados</li>
-                <li>✔ 95% de usuarios satisfechos en encuestas</li>
-            </ul>
+            <h2 class="mb-3">📊Nuestro impacto</h2>
+                <p class="text-center">✔ Más de 100 familias ya usan PediVax</p>
+                <p class="text-center">✔ 1.200 eventos médicos gestionados</p>
         </div>
     </div>
     <div class="info-image">
-        <img src="https://via.placeholder.com/400x300?text=Impacto" alt="Impacto de la plataforma">
+        <img src="./img/quienesSomos-img/nuestro-impacto.png" alt="Impacto de la plataforma">
     </div>
 </section>
 

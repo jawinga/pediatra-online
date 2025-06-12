@@ -202,7 +202,7 @@ $colores = [
         </div>
     </div>
 
-      <!-- BOTONES DE EDADES (antes de las tarjetas) -->
+      <!--  BOTONES DE EDADES (antes de las tarjetas)  -->
       <div class="text-center mb-4">
         <?php foreach (array_keys($vacunas) as $mes): ?>
           <?php $clase = $colores[$mes] ?? 'secondary'; ?>

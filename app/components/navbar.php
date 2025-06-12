@@ -7,6 +7,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 $isLoggedIn = isset($_SESSION['usuario_id']);
 ?>
+<!--Navbar-->
 <nav class="navbar" id="navbar">
     <div class="logo">
         <a href="<?php echo BASE_URL; ?>app/views/inicio.php">

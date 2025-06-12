@@ -188,7 +188,7 @@ if ($isLoggedIn) {
             <div class="col-lg-4">
                     <!-- Banner lateral -->
                 <aside class="blog-banner d-flex flex-column align-items-center p-3 shadow rounded-4">
-                    <img src="/pediatra-online/app/views/img/quienesSomos-img/medico-vacunando.png" alt="Blog PediVax" class="img-fluid rounded-3 mb-3" style="max-height: 180px; object-fit: cover;">
+                    <img src="/pediatra-online/app/views/img/quienesSomos-img/nuestros-valores.png" alt="Blog PediVax" class="img-fluid rounded-3 mb-3" style="max-height: 180px; object-fit: cover;">
                     <h5 class="fw-bold text-center text-pink">Descubre nuestros recursos</h5>
                     <p class="text-center small mb-3">Consejos pediátricos, artículos de expertos y contenido útil para padres y madres.</p>
                     <a href="/pediatra-online/app/views/recursos.php" class="btn btn-pink w-100 mt-auto">Ir al Blog</a>
@@ -198,7 +198,7 @@ if ($isLoggedIn) {
     </div>
 
 
-    <!-- Sección de FAQs -->
+    <!--  Sección de FAQs  -->
     <section class="faq my-5 mb-5 container-xl faq-container">
     <h2 class="text-center mb-4 text-pink fw-bold">
         <i class="bi bi-chat-dots-fill me-2"></i> Preguntas frecuentes
